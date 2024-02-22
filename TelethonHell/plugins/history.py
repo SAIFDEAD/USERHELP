@@ -9,7 +9,7 @@ async def _(hellevent):
         return
     in_chat = hellevent.chat_id
     reply_message = await hellevent.get_reply_message()
-    chat = "Sangmatainfo_bot"
+    chat = "@SangMata_beta_bot"
     victim = reply_message.sender.id
     if reply_message.sender.bot:
         await eod(hellevent, "Need actual users. Not Bots")
@@ -51,7 +51,7 @@ async def _(hellevent):
                 await parse_error(hell, "Unexpected Error Occured !!")
             await hellevent.client.delete_messages(conv.chat_id, [first.id])
         except YouBlockedUserError:
-            return await parse_error(hell, "__Unblock @Sangmatainfo_bot and try again.__", False)
+            return await parse_error(hell, "__Unblock @SangMata_beta_bot and try again.__", False)
 
 
 # @hell_cmd(pattern="unh(?:\s|$)([\s\S]*)")
