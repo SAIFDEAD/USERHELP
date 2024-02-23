@@ -18,7 +18,7 @@ async def _(hellevent):
     success = False
     async with hellevent.client.conversation(chat) as conv:
         try:
-            first = await conv.send_message(f"/search_id {victim}")
+            first = await conv.send_message(f" {victim}")
             try:
                 await hell.delete()
                 response1 = await conv.get_response()
