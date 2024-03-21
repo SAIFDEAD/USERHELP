@@ -1,83 +1,31 @@
 <h1 align="center">
-  <b>†hê Hêllẞø† 🇮🇳</b>
+  <b>𝐒𝙰𝙸𝙵 𝐔𝚂𝙴𝚁 𝐒𝙿𝙰𝙼</b>
 </h1>
 
 <p align="center">
-  <img src="https://te.legra.ph/file/fd0c3c2201447746fd1d0.jpg" alt="The-HellBot">
+  <img src="https://telegra.ph/file/ef25c527dba62a5917022.jpg" alt="The-HellBot">
 </p>
 
 <h6 align="center">
-  <b>⚡ ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt ⚡</b>
+  <b>⚡ 𝐋ɛɢɛռɖaʀʏ 𝐎ғ 𝐒αιғβσтƨ ⚡</b>
 </h6>
 
 <h3 align="center">
   <b>A Smooth & Fast Telegram Userbot Based On Telethon Bot Library.</b>
 </h3>
 
------
-
-<details><summary><h1><b>Deploy Alternatives 🥷🏻</h1></b></summary>
-
-  - 
-    [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/The-HellBot/Plugins-T&branch=master&name=hellbot-koyeb&run_command=bash+runkoyeb&env[APP_ID]&env[API_HASH]&env[BOT_TOKEN]&env[HELLBOT_SESSION]&env[DATABASE_URL])
-
-</details>
-
------
-
-<h1 align="center">
-  <b>Follow this format to make your own plugin for HellBot</b>
-</h1>
-
-```python3
-"""
-A sample code to display hello without taking input.
-"""
-# this is a mandatory import
-from . import *
-
-# assigning command
-@hell_cmd(pattern="hii$")
-async def hi(event):
-    # command body
-    await eor(event, "Hello!")
 
 
-# to display in help menu
-CmdHelp("hii").add_command(
-  "hii", None, "Says Hello!"
-).add()
-```
-----
-```python3
-"""
-A sample code to display hello with input.
-"""
-# this is a mandatory import
-from . import *
-
-# assigning command
-@hell_cmd(pattern="hii(?:\s|$)([\s\S]*)")
-async def hi(event):
-    # command body
-    _input = event.pattern_match.group(1)
-    if _input:
-        await eor(event, f"Hello! {_input}")
-    else:
-        await eor(event, "Hello!")
 
 
-# to display in help menu
-CmdHelp("hii").add_command(
-    "hii", "<text>", "Display Hello with a input!"
-).add()
-```
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/SAIFDEAD/USERBOTZ"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-yellow?style=for-the-badge&logo=heroku" width="300" height="40.0"/></a></p>
 
 
-### To get more functions read codes in repo.
+
+
+
 
 ------
-
 ## Disclaimer
 - We won't be responsible for any kind of ban due to this bot.
 - HellBot was made for fun purpose and to make group management easier.
@@ -90,11 +38,15 @@ CmdHelp("hii").add_command(
 ------
 # License
 
-![](https://www.gnu.org/graphics/gplv3-or-later.png)
+<p align="center">
+    <img src="https://www.gnu.org/graphics/gplv3-or-later.png" alt="USERBOTZ License">
+</p>
 
-<h4 align="center">Copyright (C) 2022 <a href="https://github.com/The-HellBot">The-HellBot</a></h4>
+<h4 align="center">
+    Copyright (C) 2023 <a href="https://github.com/SAIFDEAD">USERBOTZ</a>
+</h4>
 
-Project [HellBot](https://github.com/The-HellBot/HellBot) is free software: you can redistribute it and/or modify
+Project [⚡ 𝐒αιғβσтƨ ⚡](https://github.com/SAIFDEAD/USERBOTZ) is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
@@ -105,11 +57,3 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program. If not, see <https://www.gnu.org/licenses/>.
 
-------
-## Credits
-
-- 💖 [Telethon](https://github.com/LonamiWebs/Telethon)
-- 💖 [Pyrogram](https://github.com/Pyrogram/Pyrogram)
-- 💖 Team Hellbot
-
-------
