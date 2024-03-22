@@ -29,8 +29,8 @@ async def _(event):
     except Exception as e:
         no_admin_privilege_message = await event.client.send_message(
             entity=event.chat_id,
-            message="""**Automatic AntiFlooder**
-@admin [User](tg://user?id={}) is flooding this chat.
+            message="""**ᴀᴜᴛᴏᴍᴀᴛɪᴄ ᴀɴᴛɪғʟᴏᴏᴅᴇʀ**
+@admin [user](tg://user?id={}) ɪs ғʟᴏᴏᴅɪɴɢ ᴛʜɪs ᴄʜᴀᴛ.
 `{}`""".format(
                 event.message.sender_id, str(e)
             ),
@@ -38,7 +38,7 @@ async def _(event):
         )
         await asyncio.sleep(10)
         await no_admin_privilege_message.edit(
-            "This is useless SPAM dude. Stop this, enjoy chat man ", link_preview=False
+            "ᴛʜɪs ɪs ᴜsᴇʟᴇss sᴘᴀᴍ ᴅᴜᴅᴇ. sᴛᴏᴘ ᴛʜɪs, ᴇɴᴊᴏʏ ᴄʜᴀᴛ ᴍᴀɴ ", link_preview=False
         )
     else:
         await event.client.send_message(
@@ -66,10 +66,10 @@ async def _(event):
         await parse_error(event, e)
 
 
-CmdHelp("antiflood").add_command(
-    "setflood", "<number>", "Warns the user if he/she spams the chat and if you are an admin then it mutes him/her in the grp"
+CmdHelp("𝐀ɴᴛɪғʟᴏᴏᴅ").add_command(
+    "sᴇᴛғʟᴏᴏᴅ", "<number>", "Warns the user if he/she spams the chat and if you are an admin then it mutes him/her in the grp"
 ).add_info(
-    "Anti Spammer"
+    "ᴀɴᴛɪ sᴘᴀᴍᴍᴇʀ"
 ).add_warning(
     "✅ Harmless Module."
 ).add()
