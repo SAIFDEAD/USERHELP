@@ -18,12 +18,12 @@ else:
 
 
 alive_txt = """{}\n
-<b><i>🏅 𝙱𝚘𝚝 𝚂𝚝𝚊𝚝𝚞𝚜 🏅</b></i>
-<b>Telethon ≈</b>  <i>{}</i>
-<b>Hêllẞø† ≈</b>  <i>{}</i>
-<b>Uptime ≈</b>  <i>{}</i>
-<b>Abuse ≈</b>  <i>{}</i>
-<b>Sudo ≈</b>  <i>{}</i>
+<b><i>𝐁ᴏᴛ 𝐒ᴛᴀᴛᴜs 🥀</b></i>
+<b>𝐓ᴇʟᴇᴛʜᴏɴ ≈</b>  <i>{}</i>
+<b>𝐒αιғβσтƨ ≈</b>  <i>{}</i>
+<b>𝐔ᴘᴛɪᴍᴇ ≈</b>  <i>{}</i>
+<b>𝐀ʙᴜsᴇ ≈</b>  <i>{}</i>
+<b>𝐒ᴜᴅᴏ ≈</b>  <i>{}</i>
 """
 
 
@@ -47,7 +47,7 @@ def button(page, modules):
     buttons.append(
         [
             Button.inline(f"⤟ Back {hell_emoji}", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"),
-            Button.inline(f"• ❌ •", data="close"),
+            Button.inline(f"💔", data="close"),
             Button.inline(f"{hell_emoji} Next ⤠", data=f"page({0 if page == (max_pages - 1) else (page + 1)})"),
         ]
     )
@@ -73,8 +73,8 @@ if Config.BOT_USERNAME and tbot:
             if a:
                 help_pic = a.split(" ")[0]
             else:
-                help_pic = "https://te.legra.ph/file/3a48c5756d2a9763eafaf.jpg"
-            help_msg = f"🔰 **{hell_mention}**\n\n📜 __Plugins:__ `{len(CMD_HELP)}` \n🗂️ __Commands:__ `{len(apn)}`\n🗒️ __Page:__ 1/{veriler[0]}"
+                help_pic = "https://te.legra.ph/file/ef25c527dba62a5917022.jpg"
+            help_msg = f"🥀 **{hell_mention}**\n\n💸__Plugins:__ `{len(CMD_HELP)}` \n🔍 __Commands:__ `{len(apn)}`\n✨ __Page:__ 1/{veriler[0]}"
             if help_pic == "DISABLE":
                 result = builder.article(
                     f"Hey! Only use {hl}help please",
@@ -99,7 +99,7 @@ if Config.BOT_USERNAME and tbot:
                 )
         elif event.query.user_id in auth and query == "alive":
             uptime = await get_time((time.time() - StartTime))
-            alive_msg = gvarstat("ALIVE_MSG") or "»»» <b>нєℓℓвσт ιѕ σиℓιиє</b> «««"
+            alive_msg = gvarstat("ALIVE_MSG") or "»»» <b>sαιғβσт ιѕ σиℓιиє</b> «««"
             alive_name = gvarstat("ALIVE_NAME") or HELL_USER
             he_ll = alive_txt.format(
                 alive_msg, telethon_version, hellbot_version, uptime, abuse_m, is_sudo
@@ -109,8 +109,8 @@ if Config.BOT_USERNAME and tbot:
                     Button.url(f"{alive_name}", f"tg://openmessage?user_id={ForGo10God}")
                 ],
                 [
-                    Button.url("My Channel", f"https://t.me/{my_channel}"),
-                    Button.url("My Group", f"https://t.me/{my_group}"),
+                    Button.url("𝐂ʜᴀɴɴᴇʟ", f"https://t.me/SAIFALLBOT"),
+                    Button.url("𝐆ʀᴏᴜᴘ", f"https://t.me/SAIFHELPGC"),
                 ],
             ]
             a = gvarstat("ALIVE_PIC")
@@ -122,7 +122,7 @@ if Config.BOT_USERNAME and tbot:
                         pic_list.append(c)
                 PIC = random.choice(pic_list)
             else:
-                PIC = "https://te.legra.ph/file/ea9e11f7c9db21c1b8d5e.mp4"
+                PIC = "https://te.legra.ph/file/ef25c527dba62a5917022.jpg"
             if PIC and PIC.endswith((".jpg", ".png")):
                 result = builder.photo(
                     PIC,
@@ -151,7 +151,7 @@ if Config.BOT_USERNAME and tbot:
 
         elif event.query.user_id in auth and query == "pm_warn":
             CSTM_PMP = gvarstat("CUSTOM_PMPERMIT") or None
-            HELL_FIRST = f"🔥 𝙃𝙚𝙡𝙡𝘽𝙤𝙩 𝙋𝙈 𝙎𝙚𝙘𝙪𝙧𝙞𝙩𝙮 🔥\n\nHello!! This is an automated message on behalf of {hell_mention}."
+            HELL_FIRST = f"𝐒ᴀɪғ𝐁σтs 𝐃м 𝐏яσтɛcтισи \n\nʜᴇʟʟᴏ!! Ƭнιƨ ιƨ ᴀɴ ᴀᴜᴛᴏᴍᴀᴛᴇᴅ ᴍᴇssᴀɢᴇ ᴏɴ ʙᴇʜᴀʟғ ᴏғ {hell_mention}. ᴛʜɪs ɪᴅ ɪs ᴘʀᴏᴛᴇᴄᴛᴇᴅ ʙʏ sᴀɪғʙᴏᴛs"
             if CSTM_PMP:
                 HELL_FIRST += f"\n\n{CSTM_PMP}"
             a = gvarstat("PMPERMIT_PIC")
@@ -165,15 +165,15 @@ if Config.BOT_USERNAME and tbot:
                         pic_list.append(c)
                 PIC = random.choice(pic_list)
             else:
-                PIC = "https://te.legra.ph/file/58df4d86400922aa32acd.jpg"
+                PIC = "https://te.legra.ph/file/ef25c527dba62a5917022.jpg"
             if PIC and PIC.endswith((".jpg", ".png")):
                 result = builder.photo(
                     file=PIC,
                     text=HELL_FIRST,
                     buttons=[
-                        [Button.inline("📝 Request Approval", data="req")],
-                        [Button.inline("🚫 Block", data="heheboi")],
-                        [Button.inline("❓ Curious", data="pmclick")],
+                        [Button.inline("𝐀ᴘᴘʀᴏᴠᴀʟ 🌹", data="req")],
+                        [Button.inline("🚫 𝐁ʟᴏᴄᴋ", data="heheboi")],
+                        [Button.inline(" 𝐂ᴜʀɪᴏᴜs 🥀", data="pmclick")],
                     ],
                     link_preview=False,
                 )
@@ -183,9 +183,9 @@ if Config.BOT_USERNAME and tbot:
                     text=HELL_FIRST,
                     title="Hellbot PM Permit",
                     buttons=[
-                        [Button.inline("📝 Request Approval", data="req")],
-                        [Button.inline("🚫 Block", data="heheboi")],
-                        [Button.inline("❓ Curious", data="pmclick")],
+                        [Button.inline("𝐀ᴘᴘʀᴏᴠᴀʟ 🌹", data="req")],
+                        [Button.inline("🚫 𝐁ʟᴏᴄᴋ", data="heheboi")],
+                        [Button.inline("𝐂ᴜʀɪᴏᴜs 🥀", data="pmclick")],
                     ],
                     link_preview=False,
                 )
@@ -194,9 +194,9 @@ if Config.BOT_USERNAME and tbot:
                     text=HELL_FIRST,
                     title="Hellbot PM Permit",
                     buttons=[
-                        [Button.inline("📝 Request Approval", data="req")],
-                        [Button.inline("🚫 Block", data="heheboi")],
-                        [Button.inline("❓ Curious", data="pmclick")],
+                        [Button.inline("𝐀ᴘᴘʀᴏᴠᴀʟ 🌹", data="req")],
+                        [Button.inline("🚫 𝐁ʟᴏᴄᴋ", data="heheboi")],
+                        [Button.inline("𝐂ᴜʀɪᴏᴜs 🥀", data="pmclick")],
                     ],
                     link_preview=False,
                 )
@@ -204,28 +204,28 @@ if Config.BOT_USERNAME and tbot:
         elif event.query.user_id in auth and query == "repo":
             result = builder.article(
                 title="Repository",
-                text=f"**⚡ ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt ⚡**",
+                text=f"**⚡ 𝐋ɛɢɛռɖaʀʏ 𝐎ғ 𝐒αιғβσтƨ ⚡**",
                 buttons=[
-                    [Button.url("📑 Repo 📑", "https://github.com/The-HellBot/HellBot")],
-                    [Button.url("HellBot Network", "https://t.me/hellbot_networks")],
+                    [Button.url(" 𝐑ᴇᴘᴏ 🦋", "https://github.com/SAIFDEAD/USERBOTZ")],
+                    [Button.url(" 𝐍ᴇᴛᴡᴏʀᴋ 🥀", "https://t.me/SAIFHELPGC")],
                 ],
             )
 
         else:
             result = builder.article(
-                "@Its_HellBot",
-                text="""**Hey! This is [Hêllẞø†](https://t.me/its_hellbot) \nYou can know more about me from the links given below 👇**""",
+                "@SAIF_DICTATOR",
+                text="""**ʜᴇʏ! ᴛʜɪs ɪs [𝐃ɪᴄᴛᴀᴛᴏʀ 🥀](https://t.me/SAIF_DICTATOR) \nʏᴏᴜ ᴄᴀɴ ᴋɴᴏᴡ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍᴇ ғʀᴏᴍ ᴛʜᴇ ʟɪɴᴋs ɢɪᴠᴇɴ ʙᴇʟᴏᴡ 🍃**""",
                 buttons=[
                     [
-                        Button.url("• Updates •", "https://t.me/Its_HellBot"),
-                        Button.url("• Chat •", "https://t.me/hellbot_chats"),
+                        Button.url("• 𝐔ᴘᴅᴀᴛᴇs •", "https://t.me/SAIFALLBOT"),
+                        Button.url("• 𝐂ʜᴀᴛ •", "https://t.me/SAIFHELPGC"),
                     ],
                     [
-                        Button.url("• Repo •", "https://github.com/The-HellBot/HellBot"),
-                        Button.url("• Docs •", "https://hellbot.tech"),
+                        Button.url("• 𝐑ᴇᴘᴏ •", "https://github.com/SAIFDEAD/USERBOTZ"),
+                        Button.url("• 𝐎ᴡɴᴇʀ •", "https://t.me/SAIF_DICTATOR"),
                     ],
                     [
-                        Button.url("◈ HellBot Network ◈", "https://t.me/hellbot_networks"),
+                        Button.url("◈ 𝐍ᴇᴛᴡᴏʀᴋ ◈", "https://t.me/SAIFHELPGC"),
                     ],
                 ],
                 link_preview=False,
@@ -239,7 +239,7 @@ if Config.BOT_USERNAME and tbot:
         if event.query.user_id in auth:
             reply_popup = "This is for Other Users..."
         else:
-            reply_popup = "🔰 This is Hêllẞø† PM Security to keep away unwanted retards from spamming PM !!"
+            reply_popup = "🥀 ᴛʜɪs ɪs 𝐒αιғβσтƨ ᴘᴍ sᴇᴄᴜʀɪᴛʏ ᴛᴏ ᴋᴇᴇᴘ ᴀᴡᴀʏ ᴜɴᴡᴀɴᴛᴇᴅ ʀᴇᴛᴀʀᴅs ғʀᴏᴍ sᴘᴀᴍᴍɪɴɢ ᴘᴍ 🌺"
         await event.answer(reply_popup, cache_time=0, alert=True)
 
     @tbot.on(CallbackQuery(data=compile(b"req")))
@@ -249,7 +249,7 @@ if Config.BOT_USERNAME and tbot:
             await event.answer("This is for other users!", cache_time=0, alert=True)
         else:
             await event.edit(
-                "✅ **Request Registered** \n\nMy master will now decide to look for your request or not.\n😐 Till then wait patiently and don't spam!!"
+                "💐 **𝐑ᴇǫᴜᴇsᴛ 𝐑ᴇɢɪsᴛᴇʀᴇᴅ** \n\nᴍʏ ᴍᴀsᴛᴇʀ ᴡɪʟʟ ɴᴏᴡ ᴅᴇᴄɪᴅᴇ ᴛᴏ ʟᴏᴏᴋ ғᴏʀ ʏᴏᴜʀ ʀᴇǫᴜᴇsᴛ ᴏʀ ɴᴏᴛ.\n😐 ᴛɪʟʟ ᴛʜᴇɴ ᴡᴀɪᴛ ᴘᴀᴛɪᴇɴᴛʟʏ ᴀɴᴅ ᴅᴏɴ'ᴛ sᴘᴀᴍ 🥀"
             )
             target = await event.client(GetFullUserRequest(event.query.user_id))
             first_name = html.escape(target.users[0].first_name)
@@ -257,8 +257,8 @@ if Config.BOT_USERNAME and tbot:
                 first_name = first_name.replace("\u2060", "")
             await tbot.send_message(
                 Config.LOGGER_ID,
-                f"#PM_REQUEST \n\n⚜️ You got a PM request from [{first_name}](tg://user?id={event.query.user_id}) !",
-            )
+                f"#PM_REQUEST \n\n⚜️ ʏᴏᴜ ɢᴏᴛ ᴀ ᴘᴍ ʀᴇǫᴜᴇsᴛ ғʀᴏᴍ [{first_name}](tg://user?id={event.query.user_id}) 🌻",
+                     ) 
 
     @tbot.on(CallbackQuery(data=compile(b"heheboi")))
     async def on_pm_click(event):
@@ -283,8 +283,8 @@ if Config.BOT_USERNAME and tbot:
                 first_name = first_name.replace("\u2060", "")
             await tbot.send_message(
                 Config.LOGGER_ID,
-                f"#BLOCK \n\n**Blocked** [{first_name}](tg://user?id={event.query.user_id}) \nReason:- PM Self Block",
-            )
+                f"#BLOCK \n\n**𝐁ʟᴏᴄᴋᴇᴅ** [{first_name}](tg://user?id={event.query.user_id}) \nReason:- PM Self Block",
+        )
 
     @tbot.on(CallbackQuery(data=compile(b"reopen")))
     async def reopn(event):
