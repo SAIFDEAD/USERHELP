@@ -9,23 +9,23 @@ StartTime = time.time()
 
 
 if not Config.API_HASH:
-    LOGS.warning("Please fill var API_HASH to continue.")
+    LOGS.warning("PLEASE FILL VAR API_HASH.")
     quit(1)
 
 if not Config.APP_ID:
-    LOGS.warning("Please fill var APP_ID to continue.")
+    LOGS.warning("PLEASE FILL VAR APP_ID.")
     quit(1)
 
 if not Config.BOT_TOKEN:
-    LOGS.warning("Please fill var BOT_TOKEN to continue.")
+    LOGS.warning("PLEASE FILL VAR BOT_TOKEN ")
     quit(1)
 
 if not Config.DATABASE_URL:
-    LOGS.warning("Please fill var DATABASE_URL to continue.")
+    LOGS.warning("Please Fill Var Database_Url To Continue.")
     quit(1)
 
 if not Config.HELLBOT_SESSION:
-    LOGS.warning("Please fill var HELLBOT_SESSION to continue.")
+    LOGS.warning("PLEASE FILL VAR SAIFBOTZ SESSION")
     quit(1)
 
 try:
@@ -39,4 +39,4 @@ except Exception:
     HEROKU_APP = None
 
 
-# hellbot
+# SAIFDEAD
