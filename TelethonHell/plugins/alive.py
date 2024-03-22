@@ -11,8 +11,9 @@ from TelethonHell.plugins import *
 # -------------------------------------------------------------------------------
 
 ALIVE_TEMP = """
-<b><i>⚡ 𝐋ɛɢɛռɖaʀʏ 𝐎ғ 𝐒αιғβσтƨ 𝐇ɛ˩ρ⚡</i></b>
-<b><i>↼ Øwñêr ⇀</i></b> : 『 {hell_mention} 』
+<b><i>⚡𝐒αιғβσтƨ 𝗔ʟιʏɛ ⚡</i></b>
+
+<b><i>↼ 𝐎ᴡɴᴇʀ 🥀 ⇀</i></b> : 『 {hell_mention} 』
 ╭──────────────
 ┣─ <b>» 𝐓ᴇʟᴇᴛʜᴏɴ:</b> <i>{telethon_version}</i>
 ┣─ <b>» 𝐒αιғβσтƨ :</b> <i>{hellbot_version}</i>
@@ -36,11 +37,11 @@ msg = """{}\n
 
 @hell_cmd(pattern="alivetemp$")
 async def set_alive_temp(event):
-    hell = await eor(event, "`Fetching template ...`")
+    hell = await eor(event, "`ғᴇᴛᴄʜɪɴɢ ᴛᴇᴍᴘʟᴀᴛᴇ ...`")
     reply = await event.get_reply_message()
     if not reply:
         alive_temp = gvarstat("ALIVE_TEMPLATE") or ALIVE_TEMP
-        to_reply = await hell.edit("Below is your current alive template 👇")
+        to_reply = await hell.edit("ʙᴇʟᴏᴡ is ʏᴏᴜʀ ᴄᴜʀʀᴇɴᴛ ᴀʟɪᴠᴇ ᴛᴇᴍᴘʟᴀᴛᴇ 👇")
         await event.client.send_message(event.chat_id, alive_temp, parse_mode=None, link_preview=False, reply_to=to_reply)
         return
     addgvar("ALIVE_TEMPLATE", reply.text)
@@ -65,7 +66,7 @@ async def _(event):
                 pic_list.append(c)
         PIC = random.choice(pic_list)
     else:
-        PIC = "https://te.legra.ph/file/ea9e11f7c9db21c1b8d5e.mp4"
+        PIC = "https://te.legra.ph/file/ef25c527dba62a5917022.jpg"
     end = datetime.datetime.now()
     ping = (end - start).microseconds / 1000
     alive = alive_temp.format(
@@ -90,7 +91,7 @@ async def _(event):
 async def hell_a(event):
     userid, _, _ = await client_id(event)
     uptime = await get_time((time.time() - StartTime))
-    am = gvarstat("ALIVE_MSG") or "<b>»» нєℓℓвσт ιѕ σиℓιиє ««</b>"
+    am = gvarstat("ALIVE_MSG") or "<b>»» ⚡ 𝐒αιғβσтƨ ⚡ ɪѕ 𝐀ʟɪᴠᴇ ««</b>"
     try:
         hell = await event.client.inline_query(Config.BOT_USERNAME, "alive")
         await hell[0].click(event.chat_id)
@@ -105,9 +106,9 @@ async def hell_a(event):
 
 
 CmdHelp("alive").add_command(
-    "alive", None, "Shows the default Alive message."
+    "alive", None, "sʜᴏᴡs ᴛʜᴇ ᴅᴇғᴀᴜʟᴛ ᴀʟɪᴠᴇ ᴍᴇssᴀɢᴇ."
 ).add_command(
-    "hell", None, "Shows inline Alive message."
+    "saif", None, "sʜᴏᴡs ɪɴʟɪɴᴇ ᴀʟɪᴠᴇ ᴍᴇssᴀɢᴇ."
 ).add_warning(
     "✅ Harmless Module"
 ).add()
