@@ -13,19 +13,19 @@ from TelethonHell.utils.startup import (join_it, logger_check, start_msg,
 from TelethonHell.version import __hellver__
 
 # Global Variables #
-HELL_PIC = "https://te.legra.ph/file/cb0bd62632a3a2b6b2726.jpg"
+HELL_PIC = "https://te.legra.ph/file/ef25c527dba62a5917022.jpg"
 
 
 # Client Starter
 async def hells(session=None, client=None, session_name="Main"):
     num = 0
     if session:
-        LOGS.info(f"••• Starting Client [{session_name}] •••")
+        LOGS.info(f"••• sᴛᴀʀᴛɪɴɢ ᴄʟɪᴇɴᴛ [{session_name}] •••")
         try:
             await client.start()
             num = 1
         except:
-            LOGS.error(f"Error in {session_name}!! Check & try again!")
+            LOGS.error(f"ᴇʀʀᴏʀ ɪɴ {session_name}!! ᴄʜᴇᴄᴋ & ᴛʀʏ ᴀɢᴀɪɴ!")
     return num
 
 
@@ -54,13 +54,13 @@ async def hell_is_on(total):
     await join_it(H5)
 
 
-# Hellbot starter...
+# SAIFBOTZ STARTER...
 async def start_hellbot():
     try:
         tbot_id = await HellBot.get_me()
         Config.BOT_USERNAME = f"@{tbot_id.username}"
         Hell.tgbot = HellBot
-        LOGS.info("••• Starting HellBot (TELETHON) •••")
+        LOGS.info("••• STARTING SAIFBOTZ (TELETHON) •••")
         C1 = await hells(Config.HELLBOT_SESSION, Hell, "HELLBOT_SESSION")
         C2 = await hells(Config.SESSION_2, H2, "SESSION_2")
         C3 = await hells(Config.SESSION_3, H3, "SESSION_3")
@@ -68,12 +68,12 @@ async def start_hellbot():
         C5 = await hells(Config.SESSION_5, H5, "SESSION_5")
         await HellBot.start()
         total = C1 + C2 + C3 + C4 + C5
-        LOGS.info("••• HellBot Startup Completed •••")
-        LOGS.info("••• Starting to load Plugins •••")
+        LOGS.info("••• SAIFBOTZ STARTUP COMPLETED •••")
+        LOGS.info("••• STARTING TO LOAD PLUGINS•••")
         await plug_load("TelethonHell/plugins/*.py")
         await plug_channel(Hell, Config.PLUGIN_CHANNEL)
-        LOGS.info("⚡ Your HellBot Is Now Working ⚡")
-        LOGS.info("Head to @Its_HellBot for Updates. Also join chat group to get help regarding HellBot.")
+        LOGS.info("⚡YOUR SAIFBOTS IS NOW WORKING ⚡")
+        LOGS.info("𝐒𝙰𝙸𝙵 𝐔𝚂𝙴𝚁 𝐒𝙿𝙰𝙼aALSO JOIN CHAT GROUP TO GET HELP REGARDING SAIFBOTZ.")
         LOGS.info(f"» Total Clients = {str(total)} «")
         await hell_is_on(total)
     except Exception as e:
@@ -92,4 +92,4 @@ else:
         pass
 
 
-# hellbot
+# SAIFDEAD
