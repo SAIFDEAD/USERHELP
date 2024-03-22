@@ -15,9 +15,9 @@ from TelethonHell.plugins import *
 @hell_cmd(pattern="zip$")
 async def _(event):
     if not event.is_reply:
-        await parse_error(event, "Reply to a file to compress it.")
+        await parse_error(event, "ʀᴇᴘʟʏ ᴛᴏ ᴀ ғɪʟᴇ ᴛᴏ ᴄᴏᴍᴘʀᴇss ɪᴛ.")
         return
-    hell = await eor(event, "Zipping ...")
+    hell = await eor(event, "ᴢɪᴘᴘɪɴɢ ...")
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
     if event.reply_to_msg_id:
@@ -58,11 +58,11 @@ async def _(event):
                 reply_message,
                 Config.TMP_DOWNLOAD_DIRECTORY,
                 progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
-                    progress(d, t, hell, c_time, "Downloading ...")
+                    progress(d, t, hell, c_time, "ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ...")
                 ),
             )
             directory_name = downloaded_file_name
-            await hell.edit("Finished downloading to my local")
+            await hell.edit("ғɪɴɪsʜᴇᴅ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴛᴏ ᴍʏ ʟᴏᴄᴀʟ")
             to_upload_file = directory_name
             output = await create_archive(to_upload_file)
             is_zip = False
@@ -73,7 +73,7 @@ async def _(event):
             await event.client.send_file(
                 event.chat_id,
                 output,
-                caption="TAR By HellBot",
+                caption="TAR BY SAIFBOTS",
                 force_document=True,
                 allow_cache=False,
                 reply_to=event.message.id,
@@ -118,11 +118,11 @@ async def create_archive(input_directory):
 
 @hell_cmd(pattern="unzip$")
 async def _(event):
-    hell = await eor(event, "Processing ...")
+    hell = await eor(event, "ᴘʀᴏᴄᴇssɪɴɢ ...")
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
     if not event.reply_to_msg_id:
-        return await parse_error(hell, "Reply to zip file!")
+        return await parse_error(hell, "ʀᴇᴘʟʏ ᴛᴏ ᴢɪᴘ ғɪʟᴇ!")
     else:
         start = datetime.datetime.now()
         reply_message = await event.get_reply_message()
@@ -132,7 +132,7 @@ async def _(event):
                 reply_message,
                 Config.TMP_DOWNLOAD_DIRECTORY,
                 progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
-                    progress(d, t, hell, c_time, "Downloading ...")
+                    progress(d, t, hell, c_time, "ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ...")
                 ),
             )
         except Exception as e:
@@ -145,7 +145,7 @@ async def _(event):
         with zipfile.ZipFile(downloaded_file_name, "r") as zip_ref:
             zip_ref.extractall(extracted)
         filename = sorted(get_lst_of_files(extracted, []))
-        await hell.edit("Unzipping now")
+        await hell.edit("ᴜɴᴢɪᴘᴘɪɴɢ ɴᴏᴡ")
         for single_file in filename:
             if os.path.exists(single_file):
                 caption_rts = os.path.basename(single_file)
@@ -185,10 +185,10 @@ async def _(event):
                         reply_to=event.message.id,
                         attributes=document_attributes,
                         progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
-                            progress(d, t, hell, c_time, "Uploading ...")
+                            progress(d, t, hell, c_time, "ᴜᴘʟᴏᴀᴅɪɴɢ ...")
                         ),
                     )
-                    await eod(hell, "DONE!!!")
+                    await eod(hell, "ᴅᴏɴᴇ!!!")
                 except Exception as e:
                     await event.client.send_message(
                         event.chat_id,
@@ -202,7 +202,7 @@ async def _(event):
 
 @hell_cmd(pattern="untar$")
 async def _(event):
-    hell = await eor(event, "Processing ...")
+    hell = await eor(event, "ᴘʀᴏᴄᴇssɪɴɢ ...")
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
     extracted = Config.TMP_DOWNLOAD_DIRECTORY + "extracted/"
@@ -307,18 +307,18 @@ def get_lst_of_files(input_directory, output_lst):
     return output_lst
 
 
-CmdHelp("archiver").add_command(
-    "zip", "Reply to file/media", "It will zip the file/media"
+CmdHelp("𝐀ʀᴄʜɪᴠᴇʀ").add_command(
+    "ᴢɪᴘ", "Reply to file/media", "It will zip the file/media"
 ).add_command(
-    "tar", "Reply to file/media", "It will tar the file/media"
+    "ᴛᴀʀ", "Reply to file/media", "It will tar the file/media"
 ).add_command(
-    "unzip", "Reply to zip file", "It will unzip the zip file"
+    "ᴜɴᴢɪᴘ", "Reply to zip file", "It will unzip the zip file"
 ).add_command(
-    "untar", "Reply to tar file", "It will untar the tar file"
+    "ᴜɴᴛᴀʀ", "Reply to tar file", "It will untar the tar file"
 ).add_command(
-    "compress", "Reply to file/media", "It will compress the replied media/file"
+    "ᴄᴏᴍᴘʀᴇss", "Reply to file/media", "It will compress the replied media/file"
 ).add_info(
-    "Better Archiver"
+    "ʙᴇᴛᴛᴇʀ ᴀʀᴄʜɪᴠᴇʀ"
 ).add_warning(
     "✅ Harmless Module."
 ).add()
