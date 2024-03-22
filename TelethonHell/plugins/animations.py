@@ -17,7 +17,7 @@ async def _(event):
 
 @hell_cmd(pattern="rain$")
 async def _(event):
-    event = await eor(event, "`Raining.......`")
+    event = await eor(event, "`ʀᴀɪɴɪɴɢ.......`")
     deq = deque(list("🌬☁️🌩🌨🌧🌦🌥⛅🌤"))
     for _ in range(48):
         await asyncio.sleep(0.3)
@@ -31,9 +31,9 @@ async def _(event):
     hell_mention = cid[2]
     animation_interval = 3
     animation_ttl = range(12)
-    event = await eor(event, "`Deploying...`")
+    event = await eor(event, "`ᴅᴇᴘʟᴏʏɪɴɢ...`")
     animation_chars = [
-        "**Heroku Connecting To Latest [Github Build](The-HellBot/HellBot)**",
+        "**Heroku Connecting To Latest [Github Build](SAIFDEAD/USERBOTZ)**",
         f"**Build started by user** {hell_mention}",
         f"**Deploy** `535a74f0` **by user** **{hell_mention}**",
         "**Restarting Heroku Server...**",
@@ -42,8 +42,8 @@ async def _(event):
         "**Process exited with** `status 143`",
         "**Starting process with command** `python3 -m stdborg`",
         "**State changed from starting to up**",
-        "__INFO:Hêllẞø†:Logged in as 557667062__",
-        "__INFO:Hêllẞø†:Successfully loaded all plugins__",
+        "__INFO:𝐒αιғβσтƨ:Logged in as 6585111267__",
+        "__INFO:𝐒αιғβσтƨ:Successfully loaded all plugins__",
         "**Build Succeeded**",
     ]
     for i in animation_ttl:
@@ -154,7 +154,7 @@ async def _(event):
         "🤯",
         "💔",
         "❤",
-        "I Love You❤",
+        "ɪ ʟᴏᴠᴇ ʏᴏᴜ ʙᴀʙᴜ 🌹",
     ]
     for i in animation_ttl:
         await asyncio.sleep(animation_interval)
@@ -208,7 +208,7 @@ async def _(event):
 async def _(event):
     animation_interval = 0.3
     animation_ttl = range(15)
-    event = await eor(event, "`Hacking this kid....`")
+    event = await eor(event, "`ʜᴀᴄᴋɪɴɢ ᴛʜɪs ᴋɪᴅ....`")
     animation_chars = [
         "Looking for WhatsApp databases in targeted person...",
         " User online: True\nTelegram access: True\nRead Storage: True ",
@@ -520,7 +520,9 @@ async def _(event):
         "👁👁\n  👅  =====> Aae madarchod apna kaam kar",
         "👁👁\n  💋  =====> Chal abb gand mra bsdk",
         "👁👁\n  👄  =====> Bhag lode",
-    ]
+        "👁👁\n  👄  =====> ⚡ 𝐋ɛɢɛռɖaʀʏ 𝐎ғ 𝐒αιғβσтƨ ⚡
+        
+   ]
     for i in animation_ttl:
         await asyncio.sleep(animation_interval)
         await event.edit(animation_chars[i % 10])
@@ -790,17 +792,17 @@ async def _(event):
     animation_ttl = range(11)
     event = await eor(event, "starting player...")
     animation_chars = [
-        "⬤⬤⬤ 81% ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`✖️`\n\n⠀⠀⠀⠀⠀[Music Player](t.me/its_hellbot)\n\n⠀⠀⠀⠀**Now Playing:shape of u**\n\n**00:00** ▱▱▱▱▱▱▱▱▱▱ **00:10**\n\n⠀⠀⠀⠀⠀`🔂` `⏮️` `⏪️` `▶️` `⏩️` `⏭️`\n\n**⠀Next Song:** __Alan Walker - Alone.__\n\n⠀⠀⠀⠀**⠀Device: I Fone XXX**",
-        "⬤⬤⬤ 81% ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`✖️`\n\n⠀⠀⠀⠀⠀[Music Player](t.me/its_hellbot)\n\n⠀⠀⠀⠀**Now Playing:shape of u**\n\n**00:01** ▰▱▱▱▱▱▱▱▱▱ **00:10**\n\n⠀⠀⠀⠀⠀`🔂` `⏮️` `⏪️` `⏸️` `⏩️` `⏭️`\n\n**⠀Next Song:** __Alan Walker - Alone.__\n\n⠀⠀⠀⠀**⠀Device: Ifone XXX**",
-        "⬤⬤⬤ 81% ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`✖️`\n\n⠀⠀⠀⠀⠀[Music Player](t.me/its_hellbot)\n\n⠀⠀⠀⠀**Now Playing:shape of u**\n\n**00:02** ▰▰▱▱▱▱▱▱▱▱ **00:10**\n\n⠀⠀⠀⠀⠀`🔂` `⏮️` `⏪️` `⏸️` `⏩️` `⏭️`\n\n**⠀Next Song:** __Alan Walker - Alone.__\n\n⠀⠀⠀⠀**⠀Device: Ifone XXX**",
-        "⬤⬤⬤ 81% ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`✖️`\n\n⠀⠀⠀⠀⠀[Music Player](t.me/its_hellbot)\n\n⠀⠀⠀⠀**Now Playing:shape of u**\n\n**00:03** ▰▰▰▱▱▱▱▱▱▱ **00:10**\n\n⠀⠀⠀⠀⠀`🔂` `⏮️` `⏪️` `⏸️` `⏩️` `⏭️`\n\n**⠀Next Song:** __Alan Walker - Alone.__\n\n⠀⠀⠀⠀**⠀Device: Ifone XXX**",
-        "⬤⬤◯ 80% ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`✖️`\n\n⠀⠀⠀⠀⠀[Music Player](t.me/its_hellbot)\n\n⠀⠀⠀⠀**Now Playing:shape of u**\n\n**00:04** ▰▰▰▰▱▱▱▱▱▱ **00:10**\n\n⠀⠀⠀⠀⠀`🔂` `⏮️` `⏪️` `⏸️` `⏩️` `⏭️`\n\n**⠀Next Song:** __Alan Walker - Alone.__\n\n⠀⠀⠀⠀**⠀Device: Ifone XXX**",
-        "⬤⬤◯ 80% ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`✖️`\n\n⠀⠀⠀⠀⠀[Music Player](t.me/its_hellbot)\n\n⠀⠀⠀⠀**Now Playing:shape of u**\n\n**00:05** ▰▰▰▰▱▱▱▱▱▱ **00:10**\n\n⠀⠀⠀⠀⠀`🔂` `⏮️` `⏪️` `⏸️` `⏩️` `⏭️`\n\n**⠀Next Song:** __Alan Walker - Alone.__\n\n⠀⠀⠀⠀**⠀Device: Ifone XXX**",
-        "⬤⬤◯ 80% ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`✖️`\n\n⠀⠀⠀⠀⠀[Music Player](t.me/its_hellbot)\n\n⠀⠀⠀⠀**Now Playing:shape of u**\n\n**00:06** ▰▰▰▰▰▰▱▱▱▱ **00:10**\n\n⠀⠀⠀⠀⠀`🔂` `⏮️` `⏪️` `⏸️` `⏩️` `⏭️`\n\n**⠀Next Song:** __Alan Walker - Alone.__\n\n⠀⠀⠀⠀**⠀Device: Ifone XXX**",
-        "⬤⬤◯ 80% ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`✖️`\n\n⠀⠀⠀⠀⠀[Music Player](t.me/its_hellbot)\n\n⠀⠀⠀⠀**Now Playing:shape of u**\n\n**00:07** ▰▰▰▰▰▰▰▱▱▱ **00:10**\n\n⠀⠀⠀⠀⠀`🔂` `⏮️` `⏪️` `⏸️` `⏩️` `⏭️`\n\n**⠀Next Song:** __Alan Walker - Alone.__\n\n⠀⠀⠀⠀**⠀Device: Ifone XXX**",
-        "⬤⬤◯ 80% ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`✖️`\n\n⠀⠀⠀⠀⠀[Music Player](t.me/its_hellbot)\n\n⠀⠀⠀⠀**Now Playing:shape of u**\n\n**00:08** ▰▰▰▰▰▰▰▰▱▱ **00:10**\n\n⠀⠀⠀⠀⠀`🔂` `⏮️` `⏪️` `⏸️` `⏩️` `⏭️`\n\n**⠀Next Song:** __Alan Walker - Alone.__\n\n⠀⠀⠀⠀**⠀Device: Ifone XXX**",
-        "⬤⬤◯ 80% ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`✖️`\n\n⠀⠀⠀⠀⠀[Music Player](t.me/its_hellbot)\n\n⠀⠀⠀⠀**Now Playing:shape of u**\n\n**00:09** ▰▰▰▰▰▰▰▰▰▱ **00:10**\n\n⠀⠀⠀⠀⠀`🔂` `⏮️` `⏪️` `⏸️` `⏩️` `⏭️`\n\n**⠀Next Song:** __Alan Walker - Alone.__\n\n⠀⠀⠀⠀**⠀Device: Ifone XXX**",
-        "⬤⬤◯ 80% ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`✖️`\n\n⠀⠀⠀⠀⠀[Music Player](t.me/its_hellbot)\n\n⠀⠀⠀⠀**Now Playing:shape of u**\n\n**00:10** ▰▰▰▰▰▰▰▰▰▰ **00:10**\n\n⠀⠀⠀⠀⠀`🔂` `⏮️` `⏪️` `⏺️` `⏩️` `⏭️`\n\n**⠀Next Song:** __Alan Walker - Alone.__\n\n⠀⠀⠀⠀**⠀Device: Ifone XXX**",
+        "⬤⬤⬤ 81% ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`✖️`\n\n⠀⠀⠀⠀⠀[Music Player](t.me/HINATA_N_BOT)\n\n⠀⠀⠀⠀**Now Playing:shape of u**\n\n**00:00** ▱▱▱▱▱▱▱▱▱▱ **00:10**\n\n⠀⠀⠀⠀⠀`🔂` `⏮️` `⏪️` `▶️` `⏩️` `⏭️`\n\n**⠀Next Song:** __Alan Walker - Alone.__\n\n⠀⠀⠀⠀**⠀Device: I Fone XXX**",
+        "⬤⬤⬤ 81% ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`✖️`\n\n⠀⠀⠀⠀⠀[Music Player](t.me/HINATA_N_BOT)\n\n⠀⠀⠀⠀**Now Playing:shape of u**\n\n**00:01** ▰▱▱▱▱▱▱▱▱▱ **00:10**\n\n⠀⠀⠀⠀⠀`🔂` `⏮️` `⏪️` `⏸️` `⏩️` `⏭️`\n\n**⠀Next Song:** __Alan Walker - Alone.__\n\n⠀⠀⠀⠀**⠀Device: Ifone XXX**",
+        "⬤⬤⬤ 81% ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`✖️`\n\n⠀⠀⠀⠀⠀[Music Player](t.me/HINATA_N_BOT)\n\n⠀⠀⠀⠀**Now Playing:shape of u**\n\n**00:02** ▰▰▱▱▱▱▱▱▱▱ **00:10**\n\n⠀⠀⠀⠀⠀`🔂` `⏮️` `⏪️` `⏸️` `⏩️` `⏭️`\n\n**⠀Next Song:** __Alan Walker - Alone.__\n\n⠀⠀⠀⠀**⠀Device: Ifone XXX**",
+        "⬤⬤⬤ 81% ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`✖️`\n\n⠀⠀⠀⠀⠀[Music Player](t.me/HINATA_N_BOT)\n\n⠀⠀⠀⠀**Now Playing:shape of u**\n\n**00:03** ▰▰▰▱▱▱▱▱▱▱ **00:10**\n\n⠀⠀⠀⠀⠀`🔂` `⏮️` `⏪️` `⏸️` `⏩️` `⏭️`\n\n**⠀Next Song:** __Alan Walker - Alone.__\n\n⠀⠀⠀⠀**⠀Device: Ifone XXX**",
+        "⬤⬤◯ 80% ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`✖️`\n\n⠀⠀⠀⠀⠀[Music Player](t.me/HINATA_N_BOT)\n\n⠀⠀⠀⠀**Now Playing:shape of u**\n\n**00:04** ▰▰▰▰▱▱▱▱▱▱ **00:10**\n\n⠀⠀⠀⠀⠀`🔂` `⏮️` `⏪️` `⏸️` `⏩️` `⏭️`\n\n**⠀Next Song:** __Alan Walker - Alone.__\n\n⠀⠀⠀⠀**⠀Device: Ifone XXX**",
+        "⬤⬤◯ 80% ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`✖️`\n\n⠀⠀⠀⠀⠀[Music Player](t.me/HINATA_N_BOT)\n\n⠀⠀⠀⠀**Now Playing:shape of u**\n\n**00:05** ▰▰▰▰▱▱▱▱▱▱ **00:10**\n\n⠀⠀⠀⠀⠀`🔂` `⏮️` `⏪️` `⏸️` `⏩️` `⏭️`\n\n**⠀Next Song:** __Alan Walker - Alone.__\n\n⠀⠀⠀⠀**⠀Device: Ifone XXX**",
+        "⬤⬤◯ 80% ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`✖️`\n\n⠀⠀⠀⠀⠀[Music Player](t.me/HINATA_N_BOT)\n\n⠀⠀⠀⠀**Now Playing:shape of u**\n\n**00:06** ▰▰▰▰▰▰▱▱▱▱ **00:10**\n\n⠀⠀⠀⠀⠀`🔂` `⏮️` `⏪️` `⏸️` `⏩️` `⏭️`\n\n**⠀Next Song:** __Alan Walker - Alone.__\n\n⠀⠀⠀⠀**⠀Device: Ifone XXX**",
+        "⬤⬤◯ 80% ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`✖️`\n\n⠀⠀⠀⠀⠀[Music Player](t.me/HINATA_N_BOT)\n\n⠀⠀⠀⠀**Now Playing:shape of u**\n\n**00:07** ▰▰▰▰▰▰▰▱▱▱ **00:10**\n\n⠀⠀⠀⠀⠀`🔂` `⏮️` `⏪️` `⏸️` `⏩️` `⏭️`\n\n**⠀Next Song:** __Alan Walker - Alone.__\n\n⠀⠀⠀⠀**⠀Device: Ifone XXX**",
+        "⬤⬤◯ 80% ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`✖️`\n\n⠀⠀⠀⠀⠀[Music Player](t.me/HINATA_N_BOT)\n\n⠀⠀⠀⠀**Now Playing:shape of u**\n\n**00:08** ▰▰▰▰▰▰▰▰▱▱ **00:10**\n\n⠀⠀⠀⠀⠀`🔂` `⏮️` `⏪️` `⏸️` `⏩️` `⏭️`\n\n**⠀Next Song:** __Alan Walker - Alone.__\n\n⠀⠀⠀⠀**⠀Device: Ifone XXX**",
+        "⬤⬤◯ 80% ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`✖️`\n\n⠀⠀⠀⠀⠀[Music Player](t.me/HINATA_N_BOT)\n\n⠀⠀⠀⠀**Now Playing:shape of u**\n\n**00:09** ▰▰▰▰▰▰▰▰▰▱ **00:10**\n\n⠀⠀⠀⠀⠀`🔂` `⏮️` `⏪️` `⏸️` `⏩️` `⏭️`\n\n**⠀Next Song:** __Alan Walker - Alone.__\n\n⠀⠀⠀⠀**⠀Device: Ifone XXX**",
+        "⬤⬤◯ 80% ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`✖️`\n\n⠀⠀⠀⠀⠀[Music Player](t.me/HINATA_N_BOT)\n\n⠀⠀⠀⠀**Now Playing:shape of u**\n\n**00:10** ▰▰▰▰▰▰▰▰▰▰ **00:10**\n\n⠀⠀⠀⠀⠀`🔂` `⏮️` `⏪️` `⏺️` `⏩️` `⏭️`\n\n**⠀Next Song:** __Alan Walker - Alone.__\n\n⠀⠀⠀⠀**⠀Device: Ifone XXX**",
     ]
     for i in animation_ttl:
         await asyncio.sleep(animation_interval)
@@ -912,94 +914,94 @@ async def _(event):
         await event.edit(animation_chars[i % 12])
 
 
-CmdHelp("animations").add_command(
-    "boxs", None, "Use and see"
+CmdHelp("𝐀ɴɪᴍᴀᴛɪᴏɴs").add_command(
+    "ʙᴏxs", None, "Use and see"
 ).add_command(
-    "eye", None, "Use and see"
+    "ᴇʏᴇ", None, "Use and see"
 ).add_command(
-    "thinking", None, "Use and see"
+    "ᴛʜɪɴᴋɪɴɢ", None, "Use and see"
 ).add_command(
-    "snake", None, "Use and see"
+    "sɴᴀᴋᴇ", None, "Use and see"
 ).add_command(
-    "human", None, "Use and see"
+    "ʜᴜᴍᴀɴ", None, "Use and see"
 ).add_command(
-    "mc", None, "Use and see"
+    "ᴍᴄ", None, "Use and see"
 ).add_command(
-    "virus", None, "Use and see"
+    "ᴠɪʀᴜs", None, "Use and see"
 ).add_command(
-    "repe", None, "Use and see"
+    "ʀᴇᴘᴇ", None, "Use and see"
 ).add_command(
-    "nikal", None, "Use and see"
+    "ɴɪᴋᴀʟ", None, "Use and see"
 ).add_command(
-    "music", None, "Use and see"
+    "ᴍᴜsɪᴄ", None, "Use and see"
 ).add_command(
-    "squ", None, "Use and see"
+    "sǫᴜ", None, "Use and see"
 ).add_command(
-    "rain", None, "Use and see"
+    "ʀᴀɪɴ", None, "Use and see"
 ).add_command(
-    "deploy", None, "Use and see"
+    "ᴅᴇᴘʟᴏʏ", None, "Use and see"
 ).add_command(
-    "dump", None, "Use and see"
+    "ᴅᴜᴍᴘ", None, "Use and see"
 ).add_command(
     "fleaveme", None, "Use and see"
 ).add_command(
-    "loveu", None, "Use and see"
+    "ʟᴏᴠᴇᴜ", None, "Use and see"
 ).add_command(
-    "plane", None, "Use and see"
+    "ᴘʟᴀɴᴇ", None, "Use and see"
 ).add_command(
-    "police", None, "Use and see"
+    "ᴘᴏʟɪᴄᴇ", None, "Use and see"
 ).add_command(
     "jio", None, "Use and see"
 ).add_command(
     "solarsystem", None, "Use and see"
 ).add_command(
-    "degi", None, "Use and see"
+    "ᴅᴇɢɪ", None, "Use and see"
 ).add_command(
-    "nehi", None, "Use and see"
+    "ɴᴇʜɪ", None, "Use and see"
 ).add_command(
-    "hack", None, "Im a hacker bitch"
+    "ʜᴀᴄᴋ", None, "Im a hacker bitch"
 ).add_command(
-    "hnd", "<your text>", "A handy animation with the text"
+    "ʜɴᴅ", "<your text>", "A handy animation with the text"
 ).add_command(
-    "kiler", "<text>", "Cool killing animation with name"
+    "ᴋɪʟᴇʀ", "<text>", "Cool killing animation with name"
 ).add_command(
-    "padmin", None, "Prank promote a user"
+    "ᴘᴀᴅᴍɪɴ", None, "Prank promote a user"
 ).add_command(
-    "phub", None, "Animated PORNHUB Typing"
+    "ᴘʜᴜʙ", None, "Animated PORNHUB Typing"
 ).add_command(
-    "amore", None, "Animated AMORE Typing"
+    "ᴀᴍᴏʀᴇ", None, "Animated AMORE Typing"
 ).add_command(
-    "sexy", None, "Animated SEXY Typing"
+    "sᴇxʏ", None, "Animated SEXY Typing"
 ).add_command(
-    "unoob", None, "Animated text calling them noob🚶"
+    "ᴜɴᴏᴏʙ", None, "Animated text calling them noob🚶"
 ).add_command(
-    "menoob", None, "Animated text claiming you noob"
+    "ᴍᴇɴᴏᴏʙ", None, "Animated text claiming you noob"
 ).add_command(
-    "uproo", None, "Animated text claiming you to be proooo"
+    "ᴜᴘʀᴏᴏ", None, "Animated text claiming you to be proooo"
 ).add_command(
-    "mepro", None, "Animated text calling them proo Af!!"
+    "ᴍᴇᴘʀᴏ", None, "Animated text calling them proo Af!!"
 ).add_command(
-    "sprinkle", None, "Use and see"
+    "sᴘʀɪɴᴋʟᴇ", None, "Use and see"
 ).add_command(
-    "getwell", None, "Use and see"
+    "ɢᴇᴛᴡᴇʟʟ", None, "Use and see"
 ).add_command(
-    "cheer", None, "Use and see"
+    "ᴄʜᴇᴇʀ", None, "Use and see"
 ).add_command(
-    "hii", None, "Use and see"
+    "ʜɪɪ", None, "Use and see"
 ).add_command(
-    "city", None, "Use and see"
+    "ᴄɪᴛʏ", None, "Use and see"
 ).add_command(
-    "lmoon", None, "Use and see"
+    "ʟᴍᴏᴏɴ", None, "Use and see"
 ).add_command(
-    "istar", None, "I am a Superstar⚡✨"
+    "ɪsᴛᴀʀ", None, "I am a Superstar⚡✨"
 ).add_command(
-    "switch", None, "Click on the switch to reveal the price✨"
+    "sᴡɪᴛᴄʜ", None, "Click on the switch to reveal the price✨"
 ).add_command(
-    "thanos", None, "A poem on Thanos... Maybe🤐"
+    "ᴛʜᴀɴᴏs", None, "A poem on Thanos... Maybe🤐"
 ).add_command(
-    "wahack", None, "Whatsapp Hack animation"
+    "ᴡᴀʜᴀᴄᴋ", None, "Whatsapp Hack animation"
 ).add_info(
-    "Fun Animations."
+    "ғᴜɴ ᴀɴɪᴍᴀᴛɪᴏɴs."
 ).add_warning(
     "⚠️ Some commands may cause flood error."
 ).add()
