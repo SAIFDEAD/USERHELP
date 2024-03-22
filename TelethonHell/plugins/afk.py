@@ -25,7 +25,7 @@ async def set_not_afk1(event):
     if "#" not in current_message and gvarstat("AFK") == "YES":
         hellbot = await event.client.send_message(
             event.chat_id,
-            f"__**Back to Virtual World!**__\nNo Longer AFK.\n⏱️ Was afk for: `{total_afk_time}`",
+            f"__**ʙᴀᴄᴋ ᴛᴏ ғᴀᴋᴇ ᴡᴏʀʟᴅ!**__\nɴᴏ ʟᴏɴɢᴇʀ 𝗔ҒƘ.\n🥀 Ɯαƨ αғκ ғσя: `{total_afk_time}`",
             file=afk1.afk_pic,
         )
         try:
@@ -35,7 +35,7 @@ async def set_not_afk1(event):
         delgvar("AFK")
         await event.client.send_message(
             Config.LOGGER_ID,
-            f"#AFKFALSE \n\n**AFK mode** = `False`\n**AFK Timer :** `{total_afk_time}`",
+            f"#AFKFALSE \n\n**𝗔ҒƘ мσ∂ɛ** = `Ғαℓƨɛ`\n**𝗔ҒƘ Ƭιмɛя :** `{total_afk_time}`",
         )
         await asyncio.sleep(10)
         await hellbot.delete()
@@ -55,12 +55,12 @@ async def on_afk1(event):
         msg = None
         if afk1.reason is None:
             message_to_reply = (
-                f"**I'm currently AFK!** \n\n**⏰ AFK Since:**  `{total_afk_time}`"
+                f"**Ɩ'м cʋяяɛитℓʏ ᴀғᴋ!** \n\n**⏰ ᴀғᴋ sɪɴᴄᴇ:**  `{total_afk_time}`"
             )
         else:
             message_to_reply = (
-                f"**I'm currently AFK!** \n\n**⏰ AFK Since:**  `{total_afk_time}`\n"
-                + f"\n**💬 Reason:** {afk1.reason}"
+                f"**ɪ'ᴍ ᴄᴜʀʀᴇɴᴛʟʏ ᴀғᴋ!** \n\n**⏰ ᴀғᴋ sɪɴᴄᴇ:**  `{total_afk_time}`\n"
+                + f"\n** ʀᴇᴀsᴏɴ:** {afk1.reason}"
             )
         msg = await event.reply(message_to_reply, file=afk1.afk_pic)
         try:
@@ -89,11 +89,11 @@ async def start_afk1(event):
         if afk1.reason is None:
             addgvar("AFK", "YES")
             x = await event.client.send_message(
-                event.chat_id, f"**I'm going afk🚶**", file=afk1.afk_pic
+                event.chat_id, f"**ɪ'ᴍ ɢᴏɪɴɢ ᴀғᴋ 🌺**", file=afk1.afk_pic
             )
             xy = await event.client.send_message(
                 Config.LOGGER_ID,
-                f"#AFKTRUE \n**AFK mode** = `True`\n**Reason:** `Not Mentioned`",
+                f"#AFKTRUE \n**ᴀғᴋ ᴍᴏᴅᴇ** = `True`\n**ʀᴇᴀsᴏɴ:** `ɴᴏᴛ ᴍᴇɴᴛɪᴏɴᴇᴅ`",
                 file=afk1.afk_pic,
             )
             try:
@@ -105,12 +105,12 @@ async def start_afk1(event):
             addgvar("AFK", "YES")
             x = await event.client.send_message(
                 event.chat_id,
-                f"**I'm going afk🚶**\n\n**Because:** `{afk1.reason}`",
+                f"**ɪ'ᴍ ɢᴏɪɴɢ ᴀғᴋ🚶**\n\n**ʙᴇᴄᴀᴜsᴇ:** `{afk1.reason}`",
                 file=afk1.afk_pic,
             )
             xy = await event.client.send_message(
                 Config.LOGGER_ID,
-                f"#AFKTRUE \n**AFK mode** = `True`\n**Reason:** `{afk1.reason}`",
+                f"#AFKTRUE \n**ᴀғᴋ ᴍᴏᴅᴇ** = `True`\n**ʀᴇᴀsᴏɴ:** `{afk1.reason}`",
                 file=afk1.afk_pic,
             )
             try:
@@ -132,7 +132,7 @@ if H2:
         if "#" not in current_message and gvarstat("AFK2") == "YES":
             hellbot = await event.client.send_message(
                 event.chat_id,
-                f"__**Back to Virtual World!**__\nNo Longer AFK.\n⏱️ Was afk for: `{total_afk_time}`",
+                f"__**ʙᴀᴄᴋ ᴛᴏ ᴠɪʀᴛᴜᴀʟ ᴡᴏʀʟᴅ!**__\nNo ʟᴏɴɢᴇʀ ᴀғᴋ.\n⏱️ ᴡᴀs ᴀғᴋ ғᴏʀ: `{total_afk_time}`",
                 file=afk2.afk_pic,
             )
             try:
@@ -541,7 +541,7 @@ if H5:
         await event.delete()
 
 
-CmdHelp("afk").add_command(
+CmdHelp("𝐀ғᴋ").add_command(
     "afk", "<reply to media>/<reason>", "Marks you AFK with reason also shows afk time. Media also supported.", "afk <reason>`"
 ).add_extra(
     "📌 Exception", "Use # in a msg to stay in afk mode while chatting."
