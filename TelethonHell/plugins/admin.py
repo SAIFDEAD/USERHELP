@@ -540,7 +540,7 @@ async def rm_deletedacc(event):
         creator = chat.creator
         if not admin and not creator:
             return await parse_error(event, NO_ADMIN)
-        hell = await eor(event, "__🧹 Purging Zombies from here ...__")
+        hell = await eor(event, "__🧹 ᴘᴜʀɢɪɴɢ ᴢᴏᴍʙɪᴇs ғʀᴏᴍ ʜᴇʀᴇ ...__")
         del_u = 0
         del_a = 0
         async for user in event.client.iter_participants(event.chat_id):
@@ -557,9 +557,9 @@ async def rm_deletedacc(event):
                     await hell.edit(f"**FlooadWait:**\n\n__Sleeping for {fw.seconds} seconds__")
                     await sleep(fw.seconds)
         if del_u > 0:
-            del_status = f"**Zombies Purged!!**\n\n**Cleaned:** `{del_u}`"
+            del_status = f"**ᴢᴏᴍʙɪᴇs ᴘᴜʀɢᴇᴅ!!**\n\n**ᴄʟᴇᴀɴᴇᴅ:** `{del_u}`"
         if del_a > 0:
-            del_status = f"**Zombies Purged!!**\n\n**Cleaned:** `{del_u}`\n\n`{del_a}` **Zombies Holds Immunity!!**"
+            del_status = f"**ᴢᴏᴍʙɪᴇs ᴘᴜʀɢᴇᴅ!!**\n\n**ᴄʟᴇᴀɴᴇᴅ:** `{del_u}`\n\n`{del_a}` **Zombies Holds Immunity!!**"
         await hell.edit(del_status)
         await event.client.send_message(
             Config.LOGGER_ID,
@@ -568,13 +568,13 @@ async def rm_deletedacc(event):
            \n**CHAT:** {event.chat.title}(`{event.chat_id}`)",
         )
     else:
-        hell = await eor(event, "**Searching For Zombies...**")
+        hell = await eor(event, "**sᴇᴀʀᴄʜɪɴɢ ғᴏʀ ᴢᴏᴍʙɪᴇs...**")
         async for user in event.client.iter_participants(event.chat_id):
             if user.deleted:
                 del_u += 1
                 await sleep(0.5)
         if del_u > 0:
-            del_status = f"**🆘 ALERT !!**\n\n`{del_u}`  **Zombies detected ☣️\nClean them by using**  `{hl}zombies clean`"
+            del_status = f"**🆘 ALERT !!**\n\n`{del_u}`  **ᴢᴏᴍʙɪᴇs ᴅᴇᴛᴇᴄᴛᴇᴅ ☣️\nClean ᴛʜᴇᴍ ʙʏ ᴜsɪɴɢ**  `{hl}zombies clean`"
         await hell.edit(del_status)
 
 
@@ -585,7 +585,7 @@ async def _(event):
         a = await event.client.get_admin_log(
             event.chat_id, limit=5, edit=False, delete=True
         )
-        deleted_msg = "Deleted message in this group:"
+        deleted_msg = "ᴅᴇʟᴇᴛᴇᴅ ᴍᴇssᴀɢᴇ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ:"
         for i in a:
             deleted_msg += "\n👉`{}`".format(i.old.message)
         await eor(event, deleted_msg)
@@ -595,34 +595,34 @@ async def _(event):
         )
 
 
-CmdHelp("admin").add_command(
-    "setgpic", "<reply to image>", "Changes the groups display picture"
+CmdHelp("𝐀ᴅᴍɪɴ").add_command(
+    "sᴇᴛɢᴘɪᴄ", "<reply to image>", "Changes the groups display picture"
 ).add_command(
-    "promote", "<username/reply> <custom rank (optional)>", "Provides admins right to a person in the chat."
+    "ᴘʀᴏᴍᴏᴛᴇ", "<username/reply> <custom rank (optional)>", "Provides admins right to a person in the chat."
 ).add_command(
-    "demote", "<username/reply>", "Revokes the person admin permissions in the chat."
+    "ᴅᴇᴍᴏᴛᴇ", "<username/reply>", "Revokes the person admin permissions in the chat."
 ).add_command(
-    "ban", "<username/reply> <reason (optional)>", "Bans the person off your chat."
+    "ʙᴀɴ", "<username/reply> <reason (optional)>", "Bans the person off your chat."
 ).add_command(
-    "unban", "<username/reply>", "Removes the ban from the person in the chat."
+    "ᴜɴʙᴀɴ", "<username/reply>", "Removes the ban from the person in the chat."
 ).add_command(
-    "mute", "<reply>/<userid or username>", "Mutes mentioned user in current PM/Group. Mutes non-admins by restricting their rights and mutes admins by deleting their new messages."
+    "ᴍᴜᴛᴇ", "<reply>/<userid or username>", "Mutes mentioned user in current PM/Group. Mutes non-admins by restricting their rights and mutes admins by deleting their new messages."
 ).add_command(
-    "unmute", "<reply>/<userid or username>", "Unmutes the person muted in that PM/Group."
+    "ᴜɴᴍᴜᴛᴇ", "<reply>/<userid or username>", "Unmutes the person muted in that PM/Group."
 ).add_command(
-    "pin", "<reply> loud", "Pins the replied message in Group", "pin loud"
+    "ᴘɪɴ", "<reply> loud", "Pins the replied message in Group", "pin loud"
 ).add_command(
-    "unpin", "<reply> or 'all'", "Unpins the replied message or unpins all pinned messages.", "unpin all/<reply>"
+    "ᴜɴᴘɪɴ", "<reply> or 'all'", "Unpins the replied message or unpins all pinned messages.", "unpin all/<reply>"
 ).add_command(
-    "kick", "<username/reply>", "kick the person off your chat"
+    "ᴋɪᴄᴋ", "<username/reply>", "kick the person off your chat"
 ).add_command(
-    "zombies", None, "Check If The Group is Infected By Zombies."
+    "ᴢᴏᴍʙɪᴇs", None, "Check If The Group is Infected By Zombies."
 ).add_command(
-    "zombies clean", None, "Clears all the zombies in the group."
+    "ᴢᴏᴍʙɪᴇs ᴄʟᴇᴀɴ", None, "Clears all the zombies in the group."
 ).add_command(
-    "undlt", None, "display last 5 deleted messages in group."
+    "ᴜɴᴅʟᴛ", None, "display last 5 deleted messages in group."
 ).add_info(
-    "Admins Things!"
+    "ᴀᴅᴍɪɴs ᴛʜɪɴɢs!"
 ).add_warning(
     "✅ Harmless Module."
 ).add()
