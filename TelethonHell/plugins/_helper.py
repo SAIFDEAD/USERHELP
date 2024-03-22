@@ -6,10 +6,10 @@ from TelethonHell.plugins import *
 
 
 msg = f"""
-**⚡ ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt ⚡**
-  •        [📑 Repo 📑](https://github.com/The-HellBot/HellBot)
-  •        [HellBot Network](https://t.me/hellbot_networks)
-  •  ©️ {hell_channel} ™
+**⚡ 𝐋ɛɢɛռɖaʀʏ 𝐎ғ 𝐒αιғβσтƨ ⚡**
+  •        [𝐑ᴇᴘᴏ](https://github.com/SAIFDEAD/USERBOTZ)
+  •        [𝐒ᴀɪғ 𝐍ᴇᴛᴡᴏʀᴋ](https://t.me/SAIFALLBOT)
+  •  ©️ @SAIFALLBOT ™
 """
 
 
@@ -39,7 +39,7 @@ async def _(event):
             )
             await event.delete()
         except noinline:
-            hell = await eor(event, "**Inline Mode is disabled.** \n__Turning it on, please wait for a minute...__")
+            hell = await eor(event, "**ɪɴʟɪɴᴇ ᴍᴏᴅᴇ ɪs ᴅɪsᴀʙʟᴇᴅ.** \n__ᴛᴜʀɴɪɴɢ ɪᴛ ᴏɴ, ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ғᴏʀ a6 ᴍɪɴᴜᴛᴇ...__")
             async with bot.conversation("@BotFather") as conv:
                 try:
                     first = await conv.send_message("/setinline")
@@ -51,7 +51,7 @@ async def _(event):
                     await bot.send_read_acknowledge(conv.chat_id)
                 except YouBlockedUserError:
                     return await parse_error(hell, "__Unblock__ @Botfather __first.__", False)
-                await eod(hell, f"**Turned On Inline Mode Successfully.** \n\nDo `{hl}help` again to get the help menu.")
+                await eod(hell, f"**ᴛᴜʀɴᴇᴅ ᴏɴ ɪɴʟɪɴᴇ ᴍᴏᴅᴇ sᴜᴄᴄᴇssғᴜʟʟʏ.** \n\nDo `{hl}help` ᴀɢᴀɪɴ ᴛᴏ ɢᴇᴛ ᴛʜᴇ ʜᴇʟᴘ ᴍᴇɴᴜ.")
             await bot.delete_messages(
                 conv.chat_id,
                 [
