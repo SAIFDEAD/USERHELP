@@ -30,8 +30,8 @@ async def _(event):
 async def _(event):
     query = event.text[7:]
     if query == "":
-        await eor(event, "Please give manga name to search..")
-    hell = await eor(event, f"__Searching for__ `{query}` ...")
+        await eor(event, "ᴘʟᴇᴀsᴇ ɢɪᴠᴇ ᴍᴀɴɢᴀ ɴᴀᴍᴇ ᴛᴏ sᴇᴀʀᴄʜ..")
+    hell = await eor(event, f"__sᴇᴀʀᴄʜɪɴɢ ғᴏʀ__ `{query}` ...")
     qdb = rand_key()
     MANGA_DB[qdb] = query
     result = await get_manga(qdb, 1)
@@ -169,20 +169,20 @@ async def quote(event):
     await hell.edit(f"`{q['quote']}`\n\n—  **{q['character']}** (From __{q['anime']}__)")  # dimag ka bhosda hogya bc yha pe (*﹏*;)
 
 
-CmdHelp("anime").add_command(
-    "anime", "<anime name>", "Searches for the given anime and sends the details.", "anime Darling in the franxx"
+CmdHelp("𝐀ɴɪᴍᴇ").add_command(
+    "ᴀɴɪᴍᴇ", "<anime name>", "Searches for the given anime and sends the details.", "anime Darling in the franxx"
 ).add_command(
-    "manga", "<manga name>", "Searches for the given manga and sends the details.", "manga Jujutsu kaisen"
+    "ᴍᴀɴɢᴀ", "<manga name>", "Searches for the given manga and sends the details.", "manga Naruto"
 ).add_command(
-    "character", "<character name>", "Searches for the given anime character and sends the details.", "character Mai Sakurajima"
+    "ᴄʜᴀʀᴀᴄᴛᴇʀ", "<character name>", "Searches for the given anime character and sends the details.", "character Mai Sakurajima"
 ).add_command(
-    "aniuser", "<anilist username>", "Searches for the Anilist Stats of the given user.", "aniuser meizhellboy"
+    "𝐀ɴɪᴜsᴇʀ", "<anilist username>", "Searches for the Anilist Stats of the given user.", "aniuser saif is my dad"
 ).add_command(
-    "airing", "<anime name>", "Searches for the airing info of given anime."
+    "𝐀ɪʀɪɴɢ", "<anime name>", "Searches for the airing info of given anime."
 ).add_command(
-    "fillers", "<anime name>", "Searches for the filler episodes of given Anime.", "fillers Naruto"
+    "𝐅ɪʟʟᴇʀs", "<anime name>", "Searches for the filler episodes of given Anime.", "fillers Naruto"
 ).add_command(
-    "aniquote", None, "Gives a random quote from Anime."
+    "𝐀ɴɪǫᴜᴏᴛᴇ", None, "Gives a random quote from Anime."
 ).add_info(
     "Anime Module based on Anilist API."
 ).add_warning(
