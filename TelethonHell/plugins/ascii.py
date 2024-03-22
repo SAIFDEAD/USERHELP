@@ -70,12 +70,12 @@ async def _(event):
     )
 
 
-CmdHelp("ascii").add_command(
-    "ascii", "reply to any image file", "Makes an image ascii style, try out your own"
+CmdHelp("𝐀sᴄɪɪ").add_command(
+    "ᴀsᴄɪɪ", "reply to any image file", "Makes an image ascii style, try out your own"
 ).add_command(
-    "line", "reply to any image file", "Makes an image in line style"
+    "ʟɪɴᴇ", "reply to any image file", "Makes an image in line style"
 ).add_info(
-    "Lines And Ascii"
+    "ʟɪɴᴇs ᴀɴᴅ ᴀsᴄɪɪ"
 ).add_warning(
     "✅ Harmless Module."
 ).add()
