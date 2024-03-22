@@ -366,52 +366,52 @@ async def _(event):
         await event.edit(animation_chars[i % 18])
 
 
-CmdHelp("animoji").add_command(
-    "think", None, "Use and see"
+CmdHelp("𝐀ɴɪᴍᴏᴊɪ").add_command(
+    "ᴛʜɪɴᴋ", None, "Use and see"
 ).add_command(
-    "ccry", None, "Use and see"
+    "ᴄᴄʀʏ", None, "Use and see"
 ).add_command(
-    "fap", None, "Use and see"
+    "ғᴀᴘ", None, "Use and see"
 ).add_command(
-    "lmao", None, "Use and see"
+    "ʟᴍᴀᴏ", None, "Use and see"
 ).add_command(
-    "nothappy", None, "Use and see"
+    "ɴᴏᴛʜᴀᴘᴘʏ", None, "Use and see"
 ).add_command(
-    "clock", None, "Use and see"
+    "ᴄʟᴏᴄᴋ", None, "Use and see"
 ).add_command(
-    "muah", None, "Use and see"
+    "ᴍᴜᴀʜ", None, "Use and see"
 ).add_command(
-    "heart", None, "Use and see"
+    "ʜᴇᴀʀᴛ", None, "Use and see"
 ).add_command(
-    "gym", None, "Use and see"
+    "ɢʏᴍ", None, "Use and see"
 ).add_command(
-    "earth", None, "Use and see"
+    "ᴇᴀʀᴛʜ", None, "Use and see"
 ).add_command(
-    "moon", None, "Use and see"
+    "ᴍᴏᴏɴ", None, "Use and see"
 ).add_command(
-    "lovestory", None, "Turu Lob"
+    "ʟᴏᴠᴇsᴛᴏʀʏ", None, "Turu Lob"
 ).add_command(
-    "smoon", None, "Use and see"
+    "sᴍᴏᴏɴ", None, "Use and see"
 ).add_command(
-    "tmoon", None, "Use and see"
+    "ᴛᴍᴏᴏɴ", None, "Use and see"
 ).add_command(
-    "hart", None, "Use and see"
+    "ʜᴀʀᴛ", None, "Use and see"
 ).add_command(
-    "anim", None, "Use and see"
+    "ᴀɴɪᴍ", None, "Use and see"
 ).add_command(
     "fuck", None, "Use and see"
 ).add_command(
-    "sux", None, "Use and see"
+    "sᴜx", None, "Use and see"
 ).add_command(
-    "kiss", None, "Kya dekh rha h jhopdike."
+    "ᴋɪss", None, "Kya dekh rha h jhopdike."
 ).add_command(
-    "fnl", None, "Use and See."
+    "ғɴʟ", None, "Use and See."
 ).add_command(
-    "monkey", None, "Use and see."
+    "ᴍᴏɴᴋᴇʏ", None, "Use and see."
 ).add_command(
-    "hand", None, "Use and See."
+    "ʜᴀɴᴅ", None, "Use and See."
 ).add_command(
-    "gsg", None, "Use and See."
+    "ɢsɢ", None, "Use and See."
 ).add_command(
-    "theart", None, "Hearts Animation."
+    "ᴛʜᴇᴀʀᴛ", None, "Hearts Animation."
 ).add()
