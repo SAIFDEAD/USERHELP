@@ -7,8 +7,8 @@ from TelethonHell.plugins import *
 @hell_cmd(pattern="autopost(?:\s|$)([\s\S]*)")
 async def _(event):
     if event.is_private:
-        return await parse_error(event, "AutoPost Can Only Be Used For Channels & Groups.")
-    hell = await eor(event, "Trying to start autoposting from here...")
+        return await parse_error(event, "ᴀᴜᴛᴏᴘᴏsᴛ ᴄᴀɴ ᴏɴʟʏ ʙᴇ ᴜsᴇᴅ ғᴏʀ ᴄʜᴀɴɴᴇʟs & ɢʀᴏᴜᴘs.")
+    hell = await eor(event, "ᴛʀʏɪɴɢ ᴛᴏ sᴛᴀʀᴛ ᴀᴜᴛᴏᴘᴏsᴛɪɴɢ ғʀᴏᴍ ʜᴇʀᴇ...")
     cid = await client_id(event)
     ForGo10God = cid[0]
     hel_ = event.text[10:]
@@ -90,12 +90,12 @@ async def _(event):
                 await event.client.send_message(int(chat), event.message)
 
 
-CmdHelp("autopost").add_command(
-    "autopost", "<channel id>", "Auto Posts every new post from targeted channel to your channel.", "autopost <channelid> [in your channel]"
+CmdHelp("𝐀ᴜᴛᴏᴘᴏsᴛ").add_command(
+    "ᴀᴜᴛᴏᴘᴏsᴛ", "<channel id>", "Auto Posts every new post from targeted channel to your channel.", "autopost <channelid> [in your channel]"
 ).add_command(
-    "rmautopost", "<channel id>", "Stops AutoPost from targeted autoposting channel."
+    "ʀᴍᴀᴜᴛᴏᴘᴏsᴛ", "<channel id>", "Stops AutoPost from targeted autoposting channel."
 ).add_info(
-    "AutoPost From One Channel To Another."
+    "ᴀᴜᴛᴏᴘᴏsᴛ ғʀᴏᴍ ᴏɴᴇ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴀɴᴏᴛʜᴇʀ."
 ).add_warning(
     "✅ Harmless Module."
 ).add()
