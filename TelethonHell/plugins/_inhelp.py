@@ -283,7 +283,7 @@ if Config.BOT_USERNAME and tbot:
                 first_name = first_name.replace("\u2060", "")
             await tbot.send_message(
                 Config.LOGGER_ID,
-                f"#BLOCK \n\n**𝐁ʟᴏᴄᴋᴇᴅ** [{first_name}](tg://user?id={event.query.user_id}) \nReason:- PM Self Block",
+                f"#BLOCK \n\n**𝐁ʟᴏᴄᴋᴇᴅ** [{first_name}](tg://user?id={event.query.user_id}) \nʀᴇᴀsᴏɴ:- ᴘᴍ sᴇʟғ ʙʟᴏᴄᴋ 🤣",
         )
 
     @tbot.on(CallbackQuery(data=compile(b"reopen")))
@@ -302,24 +302,24 @@ if Config.BOT_USERNAME and tbot:
             if a:
                 help_pic = a.split(" ")[0]
             else:
-                help_pic = "https://te.legra.ph/file/3a48c5756d2a9763eafaf.jpg"
+                help_pic = "https://te.legra.ph/file/ef25c527dba62a5917022.jpg"
 
             if help_pic == "DISABLE":
                 await event.edit(
-                    text=f"🔰 **{hell_mention}**\n\n📜 __Plugins:__ `{len(CMD_HELP)}` \n🗂️ __Commands:__ `{len(apn)}`\n🗒️ __Page:__ 1/{veriler[0]}",
+                    text=f"💸 **{hell_mention}**\n\n💬 __𝐏ʟᴜɢɪɴs:__ `{len(CMD_HELP)}` \n😇 __𝐂ᴏᴍᴍᴀɴᴅs:__ `{len(apn)}`\n🗒️ __𝐏ᴀɢᴇ:__ 1/{veriler[0]}",
                     buttons=simp[1],
                     link_preview=False,
                     file=None,
                 )
             else:
                 await event.edit(
-                    text=f"🔰 **{hell_mention}**\n\n📜 __Plugins:__ `{len(CMD_HELP)}` \n🗂️ __Commands:__ `{len(apn)}`\n🗒️ __Page:__ 1/{veriler[0]}",
+                    text=f"🔰 **{hell_mention}**\n\n📜 __𝐏ʟᴜɢɪɴs:__ `{len(CMD_HELP)}` \n🗂️ __𝐂ᴏᴍᴍᴀɴᴅs:__ `{len(apn)}`\n🗒️ __𝐏ᴀɢᴇ:__ 1/{veriler[0]}",
                     buttons=simp[1],
                     link_preview=False,
                     file=help_pic,
                 )
         else:
-            await event.answer("Hello! This help menu is not for you, you can make yourself a HellBot and use your bot. Go to @Its_HellBot for more info.", cache_time=0, alert=True)
+            await event.answer("ʜᴇʟʟᴏ! ᴛʜɪs ʜᴇʟᴘ ᴍᴇɴᴜ ɪs ɴᴏᴛ ғᴏʀ ʏᴏᴜ, ʏᴏᴜ ᴄᴀɴ ᴍᴀᴋᴇ ʏᴏᴜʀsᴇʟғ ᴀ sᴀɪғʙᴏᴛ ᴀɴᴅ ᴜsᴇ ʏᴏᴜʀ ʙᴏᴛ. ɢᴏ ᴛᴏ @SAIFHELPGC ғᴏʀ ᴍᴏʀᴇ ɪɴғᴏ.", cache_time=0, alert=True)
 
     @tbot.on(CallbackQuery(data=compile(b"close")))
     async def on_plug_in_callback_query_handler(event):
@@ -327,23 +327,23 @@ if Config.BOT_USERNAME and tbot:
         auth = await clients_list()
         if event.query.user_id in auth:
             veriler = Button.inline(
-                f"{hell_emoji} Re-Open Menu {hell_emoji}", data="reopen"
+                f"{hell_emoji} ʀᴇ-ᴏᴘᴇɴ ᴍᴇɴᴜ {hell_emoji}", data="reopen"
             )
             await event.edit(
-                f"**🎭 Closed HellBot's help menu**\n\n**Bot Of:**  {hell_mention}\n\n        [©️ Hêllẞø† ™️]({chnl_link})",
+                f"**🎭 ᴄʟᴏsᴇᴅ sᴀɪғʙᴏᴛ's ʜᴇʟᴘ ᴍᴇɴᴜ**\n\n**ʙᴏᴛ ᴏғ:**  {hell_mention}\n\n        [©️ 𝐒αιғβσтƨ ™️]({chnl_link})",
                 buttons=veriler,
                 link_preview=False,
             )
         else:
-            await event.answer("Hello! This help menu is not for you, you can make yourself a HellBot and use your bot. Go to @Its_HellBot for more info.", cache_time=0, alert=True)
+            await event.answer("ʜᴇʟʟᴏ! ᴛʜɪs ʜᴇʟᴘ ᴍᴇɴᴜ ɪs ɴᴏᴛ ғᴏʀ ʏᴏᴜ, ʏᴏᴜ ᴄᴀɴ ᴍᴀᴋᴇ ʏᴏᴜʀsᴇʟғ ᴀ sᴀɪғʙᴏᴛ ᴀɴᴅ ᴜsᴇ ʏᴏᴜʀ ʙᴏᴛ. ɢᴏ ᴛᴏ @SAIFHELPGC ғᴏʀ ᴍᴏʀᴇ ɪɴғᴏ.", cache_time=0, alert=True)
             
     @tbot.on(CallbackQuery(data=compile(b"send\((.+?)\)")))
     async def send(event):
         plugin = event.data_match.group(1).decode("UTF-8")
         _, _, hell_mention = await client_id(event, event.query.user_id)
-        omk = f"**• Plugin name ≈** `{plugin}`\n**• Uploaded by ≈** {hell_mention}\n\n⚡ **[ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt]({chnl_link})** ⚡"
+        omk = f"**• Plugin name ≈** `{plugin}`\n**• ᴜᴘʟᴏᴀᴅᴇᴅ ʙʏ ≈** {hell_mention}\n\n⚡ **[𝐋ɛɢɛռɖaʀʏ 𝐎ғ 𝐒αιғβσтƨ ]({chnl_link})** ⚡"
         the_plugin_file = "./TelethonHell/plugins/{}.py".format(plugin.lower())
-        butt = Button.inline(f"{hell_emoji} Main Menu {hell_emoji}", data="reopen")
+        butt = Button.inline(f"{hell_emoji} ᴍᴀɪɴ ᴍᴇɴᴜ {hell_emoji}", data="reopen")
         if os.path.exists(the_plugin_file):
             await event.edit(
                 file=the_plugin_file,
@@ -372,7 +372,7 @@ if Config.BOT_USERNAME and tbot:
             )
         else:
             return await event.answer(
-                "Hello! This help menu is not for you, you can make yourself a HellBot and use your bot. Go to @Its_HellBot for more info.",
+                "Hello! This help menu is not for you, you can make yourself a Saifbot and use your bot. Go to @SAIFHELPGC for more info.",
                 cache_time=0,
                 alert=True,
             )
@@ -397,13 +397,13 @@ if Config.BOT_USERNAME and tbot:
         buttons.append([Button.inline(f"{hell_emoji} Main Menu {hell_emoji}", data=f"page({page})")])
         if event.query.user_id in auth:
             await event.edit(
-                f"**📗 File:**  `{commands}`\n**🔢 Commands:**  `{len(CMD_HELP_BOT[commands]['commands'])}`",
+                f"**📗 File:**  `{commands}`\n**𝐂ᴏᴍᴍᴀɴᴅs:**  `{len(CMD_HELP_BOT[commands]['commands'])}`",
                 buttons=buttons,
                 link_preview=False,
             )
         else:
             return await event.answer(
-                "Hello! This help menu is not for you, you can make yourself a HellBot and use your bot. Go to @Its_HellBot for more info.",
+                "Hello! This help menu is not for you, you can make yourself a SAIFBOT and use your bot. Go to @SAIFHELPGC for more info.",
                 cache_time=0,
                 alert=True,
             )
@@ -432,14 +432,14 @@ if Config.BOT_USERNAME and tbot:
         result += "\n"
         command = CMD_HELP_BOT[cmd]["commands"][commands]
         if command["params"] is None:
-            result += f"**🛠 Commands:**  `{HANDLER[:1]}{command['command']}`\n"
+            result += f"**𝐂ᴏᴍᴍᴀɴᴅs:**  `{HANDLER[:1]}{command['command']}`\n"
         else:
-            result += f"**🛠 Commands:**  `{HANDLER[:1]}{command['command']} {command['params']}`\n"
+            result += f"**𝐂ᴏᴍᴍᴀɴᴅs:**  `{HANDLER[:1]}{command['command']} {command['params']}`\n"
         if command["example"] is None:
-            result += f"**💬 Explanation:**  `{command['usage']}`\n\n"
+            result += f"**𝐄xᴘʟᴀɴᴀᴛɪᴏɴ:**  `{command['usage']}`\n\n"
         else:
-            result += f"**💬 Explanation:**  `{command['usage']}`\n"
-            result += f"**⌨️ Example:**  `{HANDLER[:1]}{command['example']}`\n\n"
+            result += f"**𝐄xᴘʟᴀɴᴀᴛɪᴏɴ:**  `{command['usage']}`\n"
+            result += f"**𝐄xᴀᴍᴘʟᴇ:**  `{HANDLER[:1]}{command['example']}`\n\n"
         if event.query.user_id in auth:
             await event.edit(
                 result,
@@ -453,10 +453,10 @@ if Config.BOT_USERNAME and tbot:
             )
         else:
             return await event.answer(
-                "Hello! This help menu is not for you, you can make yourself a HellBot and use your bot. Go to @Its_HellBot for more info.",
+                "Hello! This help menu is not for you, you can make yourself a Saifbot and use your bot. Go to @SAIFHELPGC for more info.",
                 cache_time=0,
                 alert=True,
             )
 
 
-# hellbot
+# SAIFDEAD
