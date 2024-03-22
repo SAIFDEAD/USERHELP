@@ -11,9 +11,9 @@ from TelethonHell.plugins import *
 
 @hell_cmd(pattern="autoname$")
 async def _(event):
-    hell = await eor(event, "`Starting AutoName Please Wait`")
+    hell = await eor(event, "`𝐒𝐭𝐚𝐫𝐭𝐢𝐧𝐠 𝐀𝐮𝐭𝐨𝐍𝐚𝐦𝐞 𝐏𝐥𝐞𝐚𝐬𝐞 𝐖𝐚𝐢𝐭`")
     _id, HELL_USER, _ment = await client_id(event)
-    await hell.edit(f"Auto Name has been started my Master")
+    await hell.edit(f"𝐀𝐮𝐭𝐨 𝐍𝐚𝐦𝐞 𝐡𝐚𝐬 𝐛𝐞𝐞𝐧 𝐬𝐭𝐚𝐫𝐭𝐞𝐝 𝐦𝐲 𝐌𝐚𝐬𝐭𝐞𝐫")
     await event.client.send_message(
         Config.LOGGER_ID, "#AUTONAME \n\nAutoname Started!!"
     )
@@ -57,14 +57,14 @@ async def mine(event):
     await eor(event, output_str)
 
 
-CmdHelp("auto_profile").add_command(
-    "autobio", None, "Changes your bio with random quotes. You can set your own bio by setting up gvar BIO_MSG."
+CmdHelp("𝐀ᴜᴛᴏ_𝐏ʀᴏғɪʟᴇ").add_command(
+    "ᴀᴜᴛᴏʙɪᴏ", None, "Changes your bio with random quotes. You can set your own bio by setting up gvar BIO_MSG."
 ).add_command(
-    "autoname", None, "Changes your name with time."
+    "ᴀᴜᴛᴏɴᴀᴍᴇ", None, "Changes your name with time."
 ).add_command(
-    "reserved", None, "Gives the list of usernames reserved by you. In short gives the list of public groups or channels that you are owner in."
+    "ʀᴇsᴇʀᴠᴇᴅ", None, "Gives the list of usernames reserved by you. In short gives the list of public groups or channels that you are owner in."
 ).add_info(
-    "Manage Profiles"
+    "ᴍᴀɴᴀɢᴇ ᴘʀᴏғɪʟᴇs"
 ).add_warning(
     "🚫 Potentially Harmful"
 ).add()
