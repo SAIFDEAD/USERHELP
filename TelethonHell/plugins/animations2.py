@@ -439,40 +439,40 @@ async def _(event):
         await event.edit(animation_chars[i % 4])
 
 
-CmdHelp("animations2").add_command(
-    "charging", None, "Use and See."
+CmdHelp("𝐒ɴɪᴍᴀᴛɪᴏɴs2").add_command(
+    "ᴄʜᴀʀɢɪɴɢ", None, "Use and See."
 ).add_command(
-    "bigoof", None, "Use and See."
+    "ʙɪɢᴏᴏғ", None, "Use and See."
 ).add_command(
-    "gangasta", None, "Use and See."
+    "ɢᴀɴɢᴀsᴛᴀ", None, "Use and See."
 ).add_command(
-    "candy", None, "Use and See."
+    "ᴄᴀɴᴅʏ", None, "Use and See."
 ).add_command(
-    "dick", None, "Use and See."
+    "ᴅɪᴄᴋ", None, "Use and See."
 ).add_command(
-    "hypno", None, "Use and See."
+    "ʜʏᴘɴᴏ", None, "Use and See."
 ).add_command(
-    "ding", None, "Use and See."
+    "ᴅɪɴɢ", None, "Use and See."
 ).add_command(
-    "wtf", None, "Use and See."
+    "ᴡᴛғ", None, "Use and See."
 ).add_command(
-    "kill", None, "Use and See."
+    "ᴋɪʟʟ", None, "Use and See."
 ).add_command(
-    "call", None, "Use and See."
+    "ᴄᴀʟʟ", None, "Use and See."
 ).add_command(
-    "bombs", None, "Use and See."
+    "ʙᴏᴍʙs", None, "Use and See."
 ).add_command(
-    "gmg", None, "Use and See."
+    "ɢᴍɢ", None, "Use and See."
 ).add_command(
-    "gnt", None, "Use and See."
+    "ɢɴᴛ", None, "Use and See."
 ).add_command(
-    "evil", None, "Use and See."
+    "ᴇᴠɪʟ", None, "Use and See."
 ).add_command(
-    "stupid", None, "Use and See."
+    "sᴛᴜᴘɪᴅ", None, "Use and See."
 ).add_command(
-    "indflag", None, "Use and See."
+    "ɪɴᴅғʟᴀɢ", None, "Use and See."
 ).add_info(
-    "Fun Animations Part 2"
+    "ғᴜɴ ᴀɴɪᴍᴀᴛɪᴏɴs ᴘᴀʀᴛ 2 ʙʏ sᴀɪғʙᴏᴛᴢ"
 ).add_warning(
     "✅ Harmless Module. May give flood wait."
 ).add()
