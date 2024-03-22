@@ -132,9 +132,9 @@ async def codename_info(request):
             results = results[:8]
         for item in results:
             reply += (
-                f"**Device**: {item['device']}\n"
-                f"**Name**: {item['name']}\n"
-                f"**Model**: {item['model']}\n\n"
+                f"**𝐃ᴇᴠɪᴄᴇ**: {item['device']}\n"
+                f"**𝐍ᴀᴍᴇ**: {item['name']}\n"
+                f"**𝐌ᴏᴅᴇʟ**: {item['model']}\n\n"
             )
     else:
         reply = f"`Couldn't find {device} codename!`\n"
@@ -236,20 +236,20 @@ async def twrp(request):
     await eor(request, reply)
 
 
-CmdHelp("android").add_command(
-    "magisk", None, "Get latest magisk release"
+CmdHelp("𝐀ɴᴅʀᴏɪᴅ").add_command(
+    "ᴍᴀɢɪsᴋ", None, "Get latest magisk release"
 ).add_command(
-    "device", "<codename>", "Get info about android device codename or model"
+    "ᴅᴇᴠɪᴄᴇ", "<codename>", "Get info about android device codename or model"
 ).add_command(
-    "codename", "<brand> <device>", "Search for android device codename"
+    "ᴄᴏᴅᴇɴᴀᴍᴇ", "<brand> <device>", "Search for android device codename"
 ).add_command(
-    "specs", "<brand> <device>", "Get device specifications info."
+    "sᴘᴇᴄs", "<brand> <device>", "Get device specifications info."
 ).add_command(
-    "twrp", "<codename>", "Get latest twrp download for android device."
+    "ᴛᴡʀᴘ", "<codename>", "Get latest twrp download for android device."
 ).add_command(
-    "app", "<app name>", "Searches the app in the playstore and provides the link to the app.", "app instagram"
+    "ᴀᴘᴘ", "<app name>", "Searches the app in the playstore and provides the link to the app.", "app instagram"
 ).add_info(
-    "All about Android!"
+    "ᴀʟʟ ᴀʙᴏᴜᴛ ᴀɴᴅʀᴏɪᴅ!"
 ).add_warning(
-    "✅ Harmless Module."
+    "✅ ʜᴀʀᴍʟᴇss ᴍᴏᴅᴜʟᴇ."
 ).add()
