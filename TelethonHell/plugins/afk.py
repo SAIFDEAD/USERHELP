@@ -542,11 +542,11 @@ if H5:
 
 
 CmdHelp("𝐀ғᴋ").add_command(
-    "afk", "<reply to media>/<reason>", "Marks you AFK with reason also shows afk time. Media also supported.", "afk <reason>`"
+    "ᴀғᴋ", "<reply to media>/<reason>", "Marks you AFK with reason also shows afk time. Media also supported.", "afk <reason>`"
 ).add_extra(
-    "📌 Exception", "Use # in a msg to stay in afk mode while chatting."
+    " ᴇxᴄᴇᴘᴛɪᴏɴ", "Use # in a msg to stay in afk mode while chatting."
 ).add_info(
-    "Away From Keyboard"
+    "ᴀᴡᴀʏ ғʀᴏᴍ ᴋᴇʏʙᴏᴀʀᴅ"
 ).add_warning(
     "✅ Harmless Module."
 ).add()
