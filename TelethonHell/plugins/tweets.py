@@ -230,32 +230,32 @@ async def nekobot(event):
     os.remove(kanna)
 
 
-CmdHelp("tweets").add_command(
-    "kanna", "<text>/<reply to text>", "Kanna writes for you"
+CmdHelp("𝐓ᴡᴇᴇᴛs").add_command(
+    "ᴋᴀɴɴᴀ", "<text>/<reply to text>", "Kanna writes for you"
 ).add_command(
-    "cmm", "<text>/<reply>", "Get a banner of Change My Mind"
+    "𝐜𝐦𝐦", "<text>/<reply>", "Get a banner of Change My Mind"
 ).add_command(
-    "johhny", "<text>/<reply>", "Tweet with Johhny Sins"
+    "𝐣𝐨𝐡𝐡𝐧𝐲", "<text>/<reply>", "Tweet with Johhny Sins"
 ).add_command(
-    "sunny", "<text>/<reply>", "Tweet with Sunny Leone"
+    "𝐬𝐮𝐧𝐧𝐲", "<text>/<reply>", "Tweet with Sunny Leone"
 ).add_command(
-    "gandhi", "<text>/<reply>", "Tweet with Mahatma Gandhi"
+    "ɢᴀɴᴅʜɪ", "<text>/<reply>", "Tweet with Mahatma Gandhi"
 ).add_command(
-    "pappu", "<text>/<reply>", "Tweet with pappu A.K.A Rahul Gandhi"
+    "ᴘᴀᴘᴘᴜ", "<text>/<reply>", "Tweet with pappu A.K.A Rahul Gandhi"
 ).add_command(
-    "mia", "<text>/<reply>", "Tweet with Mia Khalifa 😍"
+    "ᴍɪᴀ", "<text>/<reply>", "Tweet with Mia Khalifa 😍"
 ).add_command(
-    "trump", "<text>/<reply>", "Tweet with Mr. DooLand Trump"
+    "ᴛʀᴜᴍᴘ", "<text>/<reply>", "Tweet with Mr. DooLand Trump"
 ).add_command(
-    "modi", "<text>/<reply>", "Tweet with Sir Narendra Modi"
+    "ᴍᴏᴅɪ", "<text>/<reply>", "Tweet with Sir Narendra Modi"
 ).add_command(
-    "tweet", "<username> - <text/reply to text>", "Tweets in given username."
+    "ᴛᴡᴇᴇᴛ", "<username> - <text/reply to text>", "Tweets in given username."
 ).add_command(
-    "mytweet", "<text or reply to text>", "Tweets with your telegram account name."
+    "ᴍʏᴛᴡᴇᴇᴛ", "<text or reply to text>", "Tweets with your telegram account name."
 ).add_command(
-    "dani", "<text>/<reply>", "Tweet with Dani Daniels 😍🥰"
+    "ᴅᴀɴɪ", "<text>/<reply>", "Tweet with Dani Daniels 😍🥰"
 ).add_info(
-    "Lets Tweet."
+    "ʟᴇᴛs ᴛᴡᴇᴇᴛ."
 ).add_warning(
     "✅ Harmless Module."
 ).add()
