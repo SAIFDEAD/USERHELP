@@ -42,7 +42,7 @@ async def kang(event):
     name = user.username if user.username else ForGo10God
     custompack = gvarstat("STICKER_PACKNAME")
     packname = f"HellBot_{name}_{Sticker.pack}"
-    packnick = f"{custompack}" if custompack else f"{nick}'s Hêllẞø† Vol.{Sticker.pack}"
+    packnick = f"{custompack}" if custompack else f"{nick}'s 𝐒𝙰𝙸𝙵 𝐔𝚂𝙴𝚁 𝐒𝙿𝙰𝙼 🥀 Vol.{Sticker.pack}"
     is_sta = False
     is_ani = False
     is_vid = False
@@ -255,7 +255,7 @@ async def _(event):
     if not reply:
         return await eod(hell, "`Reply to a stciker to kang that pack.`")
     if len(lists) == 1:
-        pname = f"{un}'s Hêllẞø† Pack"
+        pname = f"{un}'s ⚡ 𝐒αιғβσтƨ ⚡ Ƥαcκ"
     else:
         pname = lists[1].strip()
     if reply and reply.media and reply.media.document.mime_type == "image/webp":
@@ -352,12 +352,12 @@ async def get_pack_info(event):
             pack_emojis.append(document_sticker.emoticon)
 
     OUTPUT = (
-        f"<b><i>◈ Sticker Title:</b></i> <code>{get_stickerset.set.title}</code>\n"
-        f"<b><i>◈ Sticker Short Name:</b></i> <code>{get_stickerset.set.short_name}</code>\n"
-        f"<b><i>◈ Official:</b></i> <code>{get_stickerset.set.official}</code>\n"
-        f"<b><i>◈ Archived:</b></i> <code>{get_stickerset.set.archived}</code>\n"
-        f"<b><i>◈ Stickers In Pack:</b></i> <code>{len(get_stickerset.packs)}</code>\n"
-        f"<b><i>◈ Emojis In Pack:</b></i> {' '.join(pack_emojis)}"
+        f"<b><i>◈ 𝐒ᴛɪᴄᴋᴇʀ 𝐓ɪᴛʟᴇ:</b></i> <code>{get_stickerset.set.title}</code>\n"
+        f"<b><i>◈ 𝐒ᴛɪᴄᴋᴇʀ 𝐒ʜᴏʀᴛ 𝐍ᴀᴍᴇ:</b></i> <code>{get_stickerset.set.short_name}</code>\n"
+        f"<b><i>◈ 𝐎ғғɪᴄɪᴀʟ:</b></i> <code>{get_stickerset.set.official}</code>\n"
+        f"<b><i>◈ 𝐀ʀᴄʜɪᴠᴇᴅ:</b></i> <code>{get_stickerset.set.archived}</code>\n"
+        f"<b><i>◈ 𝐒ᴛɪᴄᴋᴇʀs ɪɴ ᴘᴀᴄᴋ:</b></i> <code>{len(get_stickerset.packs)}</code>\n"
+        f"<b><i>◈ 𝐄ᴍᴏᴊɪs ɪɴ ᴘᴀᴄᴋ:</b></i> {' '.join(pack_emojis)}"
     )
 
     await hell.edit(OUTPUT, parse_mode='HTML')
@@ -430,7 +430,7 @@ async def sticklet(event):
         ((512 - width) / 2, (512 - height) / 2), sticktext, font=font, fill=(R, G, B)
     )
     image_stream = io.BytesIO()
-    image_stream.name = "Hellbot.webp"
+    image_stream.name = "Saifbotz.webp"
     image.save(image_stream, "WebP")
     image_stream.seek(0)
     await event.client.send_message(
@@ -467,7 +467,7 @@ async def waifu(event):
     await event.delete()
 
 
-CmdHelp("stickers").add_command(
+CmdHelp("𝐒ᴛɪᴄᴋᴇʀs").add_command(
     "kang", "<emoji> <number>", "Adds the sticker to desired pack with a custom emoji of your choice. If emoji is not mentioned then default is 😎. And if number is not mentioned then Pack will go on serial wise. \n  ✓(1 pack = 120 static stickers)\n  ✓(1 pack = 50 animated & video stickers)"
 ).add_command(
     "stkrinfo", "<reply to sticker>", "Gets all the infos of the sticker pack"
