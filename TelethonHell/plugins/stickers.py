@@ -41,7 +41,7 @@ async def kang(event):
     nick = f"@{user.username}" if user.username else HELL_USER
     name = user.username if user.username else ForGo10God
     custompack = gvarstat("STICKER_PACKNAME")
-    packname = f"HellBot_{name}_{Sticker.pack}"
+    packname = f"SaifBots_{name}_{Sticker.pack}"
     packnick = f"{custompack}" if custompack else f"{nick}'s 𝐒𝙰𝙸𝙵 𝐔𝚂𝙴𝚁 𝐒𝙿𝙰𝙼 🥀 Vol.{Sticker.pack}"
     is_sta = False
     is_ani = False
