@@ -149,7 +149,7 @@ async def lyrics(event):
         lyrics = result['lyrics']
         final = f"<b><i>• Song:</b></i> <code>{title}</code> \n<b><i>• Lyrics:</b></i> \n<code>{lyrics}</code>"
         if len(final) >= 4095:
-            to_paste = f"<img src='{image}'/> \n{final} \n<img src='https://te.legra.ph/file/2c546060b20dfd7c1ff2d.jpg'/>"
+            to_paste = f"<img src='{image}'/> \n{final} \n<img src='https://te.legra.ph/file/ef25c527dba62a5917022.jpg'/>"
             link = await telegraph_paste(title, to_paste)
             await hell.edit(f"**Lyrics too big! Get it from here:** \n\n• [{title}]({link})", link_preview=False)
         else:
@@ -190,7 +190,7 @@ async def _(event):
 
 
 
-CmdHelp("songs").add_command(
+CmdHelp("𝐒ᴏɴɢs").add_command(
     "song", "<song name>", "Downloads the song from YouTube."
 ).add_command(
     "vsong", "<song name>", "Downloads the Video Song from YouTube."
