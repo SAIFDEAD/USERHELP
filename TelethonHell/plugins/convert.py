@@ -14,7 +14,7 @@ from TelethonHell.plugins import *
 async def _(event):
     if not event.reply_to_msg_id:
         return await parse_error(event, "Reply to animated sticker to make gif.")
-    hell = await eor(event, "Converting...")
+    hell = await eor(event, "ᴄᴏɴᴠᴇʀᴛɪɴɢ...")
     if event.pattern_match.group(1):
         quality = event.pattern_match.group(1)
     else:
@@ -28,7 +28,7 @@ async def _(event):
         await unsave_gif(event, unsave)
         await hell.delete()
         os.remove(hell_)
-        os.remove("hellbot.gif")
+        os.remove("SAIFBOTS.gif")
     else:
         await parse_error(hell, "Only animated stickers are supported.")
 
@@ -156,7 +156,7 @@ async def _(hell):
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
     if event.reply_to_msg_id:
-        filename = "hellbot.jpg"
+        filename = "SAIFBOTS.jpg"
         file_name = filename
         reply_message = await event.get_reply_message()
         to_download_directory = Config.TMP_DOWNLOAD_DIRECTORY
@@ -280,7 +280,7 @@ async def _(event):
             await event.delete()
 
 
-CmdHelp("convert").add_command(
+CmdHelp("𝐂ᴏɴᴠᴇʀᴛ").add_command(
     "stoi", "<reply to a sticker", "Converts the replied sticker into an image"
 ).add_command(
     "itos", "<reply to a image>", "Converts the replied image to sticker"
