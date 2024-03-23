@@ -20,7 +20,7 @@ if Config.TAG_LOGGER != 0:
             message_link = f"https://t.me/c/{where_.id}/{event.id}"
         else:
             message_link = f"tg://openmessage?chat_id={where_.id}&message_id={event.id}"
-        ammoca_message += f"👆 #TAG\n\n**• Tag By:** {krakenm} \n**• Tag For:** {hell_men} \n**• Chat:** [{where_m}]({message_link})"
+        ammoca_message += f"👆 #𝐓𝐀𝐆\n\n**• 𝐓𝐚𝐠 𝐁𝐲:** {krakenm} \n**• 𝐓𝐚𝐠 𝐅𝐨𝐫:** {hell_men} \n**• 𝐂𝐡𝐚𝐭:** [{where_m}]({message_link})"
         await tbot.forward_messages(int(Config.TAG_LOGGER), event.id, where_.id)
         await tbot.send_message(
             int(Config.TAG_LOGGER),
@@ -41,7 +41,7 @@ async def _(event):
     await event.delete()
 
 
-CmdHelp("tagger").add_command(
+CmdHelp("𝐓ᴀɢɢᴇʀ").add_command(
     "tagall", "<text>", "Tags recent 100 users in the group."
 ).add_info(
     "Tagger."
