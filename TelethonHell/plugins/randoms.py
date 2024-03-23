@@ -92,7 +92,7 @@ async def _(e):
     await eor(e, txt.format(hell_mention))
 
 
-CmdHelp("randoms").add_command(
+CmdHelp("𝐑ᴀɴᴅᴏᴍs").add_command(
     "sing", None, "Sings a song"
 ).add_command(
     "hpotter", None, "Random harry porter character"
