@@ -8,7 +8,7 @@ async def shortener(event):
         return await parse_error(event, "`SHORTENER_API` is not configured!", False)
     lists = event.text.split(" ", 1)
     if len(lists) != 2:
-        return await parse_error(event, "Nothing given to short.")
+        return await parse_error(event, "𝐍𝐨𝐭𝐡𝐢𝐧𝐠 𝐠𝐢𝐯𝐞𝐧 𝐭𝐨 𝐬𝐡𝐨𝐫𝐭.")
     query = lists[1].strip()
     if not query:
         return await parse_error(event, "Nothing given to short.")
@@ -33,7 +33,7 @@ def short(api_key, long_url):
         return None
 
 
-CmdHelp("shortener").add_command(
+CmdHelp("𝐒ʜᴏʀᴛᴇɴᴇʀ").add_command(
     "shorten", "<url>", "Shortens the given url."
 ).add_info(
     "Shorten using shareus"
