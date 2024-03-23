@@ -12,7 +12,6 @@ from TelethonHell.plugins import *
 
 ALIVE_TEMP = """
 <b><i>⚡𝐒αιғβσтƨ 𝗔ʟιʏɛ ⚡</i></b>
-
 <b><i>↼ 𝐎ᴡɴᴇʀ 🥀 ⇀</i></b> : 『 {hell_mention} 』
 ╭──────────────
 ┣─ <b>» 𝐓ᴇʟᴇᴛʜᴏɴ:</b> <i>{telethon_version}</i>
@@ -21,7 +20,7 @@ ALIVE_TEMP = """
 ┣─ <b>» 𝐔ᴘᴛɪᴍᴇ:</b> <i>{uptime}</i>
 ┣─ <b>» 𝐏ɪɴɢ:</b> <i>{ping}</i>
 ╰──────────────
-<b><i>»»» <a href='https://t.me/SAIFHELPGC'>[⚡ 𝐒αιғβσтƨ ⚡]</a> «««</i></b>
+<b><i>»»» <a href='https://t.me/SAIFHELPGC'>⚡ 𝐒αιғβσтƨ ⚡</a> «««</i></b>
 """
 
 msg = """{}\n
