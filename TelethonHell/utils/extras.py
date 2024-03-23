@@ -89,14 +89,14 @@ async def delete_hell(event, text, time=None, parse_mode=None, link_preview=None
 async def parse_error(event, error, auto_parse=True, delete=True, time=10):
     if delete:
         if auto_parse:
-            await delete_hell(event, f"**ERROR !!** \n\n`{error}`", time)
+            await delete_hell(event, f"**ᴇʀʀᴏʀ !!** \n\n`{error}`", time)
         else:
-            await delete_hell(event, f"**ERROR !!** \n\n{error}", time)
+            await delete_hell(event, f"**ᴇʀʀᴏʀ !!** \n\n{error}", time)
     else:
         if auto_parse:
-            await edit_or_reply(event, f"**ERROR !!** \n\n`{error}`")
+            await edit_or_reply(event, f"**ᴇʀʀᴏʀ !!** \n\n`{error}`")
         else:
-            await edit_or_reply(event, f"**ERROR !!** \n\n{error}")
+            await edit_or_reply(event, f"**ᴇʀʀᴏʀ !!** \n\n{error}")
 
 
-# hellbot
+# SAIFDEAD
