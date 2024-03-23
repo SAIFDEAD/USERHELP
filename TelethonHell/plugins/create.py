@@ -39,7 +39,7 @@ async def _(event):
             r = await event.client(
                 functions.channels.CreateChannelRequest(
                     title=group_name,
-                    about="Created By Hêllẞø†",
+                    about="Created By Sαιғ βσт",
                     megagroup=type_of_group != "c",
                 )
             )
@@ -77,7 +77,7 @@ async def permalink(mention):
         await eor(mention, f"[{tag}](tg://user?id={user.id}) \n\n\n ☝️ Tap to See ☝️")
 
 
-CmdHelp("create").add_command(
+CmdHelp("𝐂ʀᴇᴀᴛᴇ").add_command(
     "create b", "Name of your grp", "Creates a super and send you link"
 ).add_command(
     "create g", "Name of your grp", "Creates a private grp and send you link"
