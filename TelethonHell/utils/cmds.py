@@ -59,14 +59,14 @@ class CmdHelp:
         return self
 
     def get_result(self):
-        result = f"**📗 File :**  `{self.FILE}`\n"
+        result = f"**𝐅ɪʟᴇ :**  `{self.FILE}`\n"
         if self.INFO == "":
             if not self.WARNING == "":
-                result += f"**⚠️ Warning :**  {self.WARNING}\n\n"
+                result += f"**𝐖ᴀʀɴɪɴɢ :**  {self.WARNING}\n\n"
         else:
             if not self.WARNING == "":
-                result += f"**⚠️ Warning :**  {self.WARNING}\n"
-            result += f"**ℹ️ Info :**  {self.INFO}\n"
+                result += f"**𝐖ᴀʀɴɪɴɢ :**  {self.WARNING}\n"
+            result += f"**𝐈ɴғᴏ :**  {self.INFO}\n"
         if self.EXTRA:
             for extra in self.EXTRA:
                 extra = self.EXTRA[extra]
@@ -75,16 +75,16 @@ class CmdHelp:
         for command in self.COMMANDS:
             command = self.COMMANDS[command]
             if command["params"] == None:
-                result += f"**🛠 Command :**  `{HANDLER[:1]}{command['command']}`\n"
+                result += f"**𝐂ᴏᴍᴍᴀɴᴅ :**  `{HANDLER[:1]}{command['command']}`\n"
             else:
-                result += f"**🛠 Command :**  `{HANDLER[:1]}{command['command']} {command['params']}`\n"
+                result += f"**𝐂ᴏᴍᴍᴀɴᴅ :**  `{HANDLER[:1]}{command['command']} {command['params']}`\n"
 
             if command["example"] == None:
-                result += f"**💬 Details :**  `{command['usage']}`\n\n"
+                result += f"**𝐃ᴇᴛᴀɪʟs :**  `{command['usage']}`\n\n"
             else:
-                result += f"**💬 Details :**  `{command['usage']}`\n"
+                result += f"**𝐃ᴇᴛᴀɪʟs :**  `{command['usage']}`\n"
                 result += (
-                    f"**⌨️ For Example :**  `{HANDLER[:1]}{command['example']}`\n\n"
+                    f"**𝐄xᴀᴍᴘʟᴇ :**  `{HANDLER[:1]}{command['example']}`\n\n"
                 )
 
             CMD_INFO[f"{command['command']}"] = {
@@ -107,4 +107,4 @@ class CmdHelp:
         return True
 
 
-# hellbot
+# SAIFDEAD
