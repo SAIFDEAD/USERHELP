@@ -8,7 +8,7 @@ from TelethonHell.plugins import *
 @hell_cmd(pattern="rmbg(?:\s|$)([\s\S]*)")
 async def _(event):
     if Config.REMOVE_BG_API is None:
-        return await parse_error(event, "`REMOVE_BG_API` __is not configured.__", False)
+        return await parse_error(event, "`REMOVE_BG_API` __ɪs ɴᴏᴛ ᴄᴏɴғɪɢᴜʀᴇᴅ.__", False)
     lists = event.text.split(" ", 2)
     flag = None
     url = None
@@ -36,19 +36,19 @@ async def _(event):
             response = ReTrieveFile(file_name)
             os.remove(file_name)
     elif url:
-        hell = await eor(event, "`Removing Background of this media`")
+        hell = await eor(event, "`ʀᴇᴍᴏᴠɪɴɢ ʙᴀᴄᴋɢʀᴏᴜɴᴅ ᴏғ ᴛʜɪs ᴍᴇᴅɪᴀ`")
         response = ReTrieveURL(url)
     else:
         return await eod(event, f"Reply to a image/sticker with `{hl}rmbg` or give image link to remove background.")
     contentType = response.headers.get("content-type")
-    remove_bg_image = "HellBot.png"
+    remove_bg_image = "Saifbots.png"
     if "image" in contentType:
-        with open("HellBot.png", "wb") as removed_bg_file:
+        with open("Saifbots.png", "wb") as removed_bg_file:
             removed_bg_file.write(response.content)
     else:
         return await parse_error(hell, response.content.decode('UTF-8'))
     if flag and flag == "-s":
-        file = tosticker(remove_bg_image, filename="HellBot.webp")
+        file = tosticker(remove_bg_image, filename="Saif UserBot.webp")
         await event.client.send_file(
             event.chat_id,
             file,
@@ -116,7 +116,7 @@ def toimage(image, filename=None):
     return filename
 
 
-CmdHelp("removebg").add_command(
+CmdHelp("𝐑ᴇᴍᴏᴠᴇʙɢ").add_command(
     "rmbg", "<flag> <reply to image/stcr or url>", "`Removes Background of replied image or sticker or given url of picture. Need` REMOVE_BG_API `to be set in Heroku Config Vars.", "rmbg -s <reply to img/url>"
 ).add_info(
     "Remove Background."
