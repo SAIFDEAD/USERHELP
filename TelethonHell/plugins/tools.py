@@ -20,7 +20,7 @@ FONT_FILE_TO_USE = "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf"
 async def _(event):
     current_time = datetime.datetime.now().strftime(
         "⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡\
-        \n   HELLBOT TIMEZONE   \
+        \n   SAIBOTS TIMEZONE   \
         \n   LOCATION: India🇮🇳  \
         \n   Time: %H:%M:%S  \
         \n   Date: %d.%m.%y     \
@@ -235,8 +235,8 @@ async def currencylist(event):
     try:
         for i in range(len(key)):
             output += f"<code>▸ {key[i]} : {value[i]}</code> \n"
-        output += "\n<img src='https://te.legra.ph/file/2c546060b20dfd7c1ff2d.jpg'/>"
-        link = await telegraph_paste("Currency List For HellBot", output)
+        output += "\n<img src='https://te.legra.ph/file/ef25c527dba62a5917022.jpg'/>"
+        link = await telegraph_paste("Currency List For SAIBOTS", output)
         await hell.edit(
             f"<b><i>⊹ Supported currency lists are:</b></i> \n\n<i>⊷ <u><a href='{link}'>Currency Lists</a></u> ⊶</i>",
             link_preview=False,
@@ -392,7 +392,7 @@ async def _(event):
         )
 
 
-CmdHelp("tools").add_command(
+CmdHelp("𝐓ᴏᴏʟs").add_command(
     "xkcd", "<query>", "Searches for the query for the relevant XKCD comic"
 ).add_command(
     "color", "<color code>", "Sends you a plain image of the color", ".color #ff0000"
