@@ -8,7 +8,7 @@ from TelethonHell.plugins import *
 @bot.on(events.ChatAction)
 async def _(event):
     ForGo10God, _, _ = await client_id(event)
-    if not gvarstat(f"WELCOME_{ForGo10God}_{str(event.chat_id)[1:]}"):
+    if not gvarstat(f"𝗪𝗘𝗟𝗖𝗢𝗠𝗘_{ForGo10God}_{str(event.chat_id)[1:]}"):
         return
     cws = get_current_welcome(event.chat_id)
     if (
@@ -72,7 +72,7 @@ if H2:
     @H2.on(events.ChatAction)
     async def _(event):
         ForGo10God, _, _ = await client_id(event)
-        if not gvarstat(f"WELCOME_{ForGo10God}_{str(event.chat_id)[1:]}"):
+        if not gvarstat(f"𝗪𝗘𝗟𝗖𝗢𝗠𝗘_{ForGo10God}_{str(event.chat_id)[1:]}"):
             return
         cws = get_current_welcome(event.chat_id)
         if (
@@ -136,7 +136,7 @@ if H3:
     @H3.on(events.ChatAction)
     async def _(event):
         ForGo10God, _, _ = await client_id(event)
-        if not gvarstat(f"WELCOME_{ForGo10God}_{str(event.chat_id)[1:]}"):
+        if not gvarstat(f"𝗪𝗘𝗟𝗖𝗢𝗠𝗘_{ForGo10God}_{str(event.chat_id)[1:]}"):
             return
         cws = get_current_welcome(event.chat_id)
         if (
@@ -201,7 +201,7 @@ if H4:
     @H4.on(events.ChatAction)
     async def _(event):
         ForGo10God, _, _ = await client_id(event)
-        if not gvarstat(f"WELCOME_{ForGo10God}_{str(event.chat_id)[1:]}"):
+        if not gvarstat(f"𝗪𝗘𝗟𝗖𝗢𝗠𝗘_{ForGo10God}_{str(event.chat_id)[1:]}"):
             return
         cws = get_current_welcome(event.chat_id)
         if (
@@ -265,7 +265,7 @@ if H5:
     @H5.on(events.ChatAction)
     async def _(event):
         ForGo10God, _, _ = await client_id(event)
-        if not gvarstat(f"WELCOME_{ForGo10God}_{str(event.chat_id)[1:]}"):
+        if not gvarstat(f"𝗪𝗘𝗟𝗖𝗢𝗠𝗘_{ForGo10God}_{str(event.chat_id)[1:]}"):
             return
         cws = get_current_welcome(event.chat_id)
         if (
@@ -339,7 +339,7 @@ async def save_welcome(event):
     elif reply and reply.media and not string:
         await event.client.send_message(
             Config.LOGGER_ID,
-            f"#WELCOME\
+            f"#𝗪𝗘𝗟𝗖𝗢𝗠𝗘\
             \n**Group id:** {event.chat_id}\
             \nThe msg below is welcome note in {event.chat.title}\
             \nDont delete this msg else welcome won't work.",
@@ -350,14 +350,14 @@ async def save_welcome(event):
         msg_id = msg_o.id
     elif reply and not string:
         string = reply.text
-    success = "`Welcome note {} for this chat.`"
+    success = "`𝗪𝗲𝗹𝗰𝗼𝗺𝗲 note {} for this chat.`"
     if add_welcome(event.chat_id, 0, string, msg_id) is True:
-        addgvar(f"WELCOME_{ForGo10God}_{str(event.chat_id)[1:]}", "TRUE")
+        addgvar(f"𝗪𝗘𝗟𝗖𝗢𝗠𝗘_{ForGo10God}_{str(event.chat_id)[1:]}", "TRUE")
         return await eor(event, success.format("saved"))
     rm_welcome(event.chat_id)
-    delgvar(f"WELCOME_{ForGo10God}_{str(event.chat_id)[1:]}")
+    delgvar(f"𝗪𝗘𝗟𝗖𝗢𝗠𝗘_{ForGo10God}_{str(event.chat_id)[1:]}")
     if add_welcome(event.chat_id, 0, string, msg_id) is True:
-        addgvar(f"WELCOME_{ForGo10God}_{str(event.chat_id)[1:]}", "TRUE")
+        addgvar(f"𝗪𝗘𝗟𝗖𝗢𝗠𝗘_{ForGo10God}_{str(event.chat_id)[1:]}", "TRUE")
         return await eor(event, success.format("updated"))
     await eod(event, "Error while setting welcome in this group")
 
@@ -365,9 +365,9 @@ async def save_welcome(event):
 @hell_cmd(pattern="cleanwelcome$")
 async def del_welcome(event):
     ForGo10God, _, _ = await client_id(event)
-    if gvarstat(f"WELCOME_{ForGo10God}_{str(event.chat_id)[1:]}"):
+    if gvarstat(f"𝗪𝗘𝗟𝗖𝗢𝗠𝗘_{ForGo10God}_{str(event.chat_id)[1:]}"):
         if rm_welcome(event.chat_id) is True:
-            delgvar(f"WELCOME_{ForGo10God}_{str(event.chat_id)[1:]}")
+            delgvar(f"𝗪𝗘𝗟𝗖𝗢𝗠𝗘_{ForGo10God}_{str(event.chat_id)[1:]}")
             await eod(event, "Welcome Message deleted for this chat")
         else:
             await eod(event, "To delete a welcome note you need to save one first.")
@@ -397,16 +397,16 @@ async def note(event):
     await eor(event, WELCOME_FORMAT)
 
 
-CmdHelp("welcome").add_command(
-    "savewelcome", "<reply>/<text>", "Sets the replied message as welcome note of that group"
+CmdHelp("𝐖ᴇʟᴄᴏᴍᴇ").add_command(
+    "sᴀᴠᴇᴡᴇʟᴄᴏᴍᴇ", "<reply>/<text>", "Sets the replied message as welcome note of that group"
 ).add_command(
-    "cleanwelcome", None, "Cleans the current welcome message of that chat."
+    "ᴄʟᴇᴀɴᴡᴇʟᴄᴏᴍᴇ", None, "Cleans the current welcome message of that chat."
 ).add_command(
-    "showwelcome", None, "Gets your current welcome message for that chat."
+    "sʜᴏᴡᴡᴇʟᴄᴏᴍᴇ", None, "Gets your current welcome message for that chat."
 ).add_command(
-    "welcome_note", None, "Gives you a message containing all the formatting of welcome message."
+    "ᴡᴇʟᴄᴏᴍᴇ_ɴᴏᴛᴇ", None, "Gives you a message containing all the formatting of welcome message."
 ).add_info(
-    "Welcome Greetings."
+    "ᴡᴇʟᴄᴏᴍᴇ ɢʀᴇᴇᴛɪɴɢs."
 ).add_warning(
     "✅ Harmless Module."
 ).add()
