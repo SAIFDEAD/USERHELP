@@ -102,16 +102,16 @@ async def get_weather(event):
 
     _, _, hell_mention = await client_id(event)
     await eor(event,
-        f"🌡️ **Temperature :** `{celsius(curtemp)}°C | {fahrenheit(curtemp)}°F`\n"
-        + f"👩‍🏫 **Human Feeling** `{celsius(feel)}°C | {fahrenheit(feel)}°F`\n"
-        + f"🌨️ **Min. Temp. :** `{celsius(min_temp)}°C | {fahrenheit(min_temp)}°F`\n"
-        + f"☀️ **Max. Temp. :** `{celsius(max_temp)}°C | {fahrenheit(max_temp)}°F`\n"
-        + f"🌦️ **Humidity :** `{humidity}%`\n"
-        + f"❕ **Pressure :** `{pressure} hPa`\n"
-        + f"🌬️ **Wind :** `{kmph[0]} kmh | {mph[0]} mph, {findir}`\n"
-        + f"☁️ **Cloud :** `{cloud} %`\n"
-        + f"🌄 **Sunrise :** `{sun(sunrise)}`\n"
-        + f"🌅 **Sunset :** `{sun(sunset)}`\n\n\n"
+        f"🌡️ **𝗧𝗲𝗺𝗽𝗲𝗿𝗮𝘁𝘂𝗿𝗲 :** `{celsius(curtemp)}°C | {fahrenheit(curtemp)}°F`\n"
+        + f"👩‍🏫 **𝗛𝘂𝗺𝗮𝗻 𝗙𝗲𝗲𝗹𝗶𝗻𝗴** `{celsius(feel)}°C | {fahrenheit(feel)}°F`\n"
+        + f"🌨️ **𝗠𝗶𝗻. 𝗧𝗲𝗺𝗽. :** `{celsius(min_temp)}°C | {fahrenheit(min_temp)}°F`\n"
+        + f"☀️ **𝗠𝗮𝘅. 𝗧𝗲𝗺𝗽. :** `{celsius(max_temp)}°C | {fahrenheit(max_temp)}°F`\n"
+        + f"🌦️ **𝗛𝘂𝗺𝗶𝗱𝗶𝘁𝘆 :** `{humidity}%`\n"
+        + f"❕ **𝗣𝗿𝗲𝘀𝘀𝘂𝗿𝗲 :** `{pressure} hPa`\n"
+        + f"🌬️ **𝗪𝗶𝗻𝗱 :** `{kmph[0]} kmh | {mph[0]} mph, {findir}`\n"
+        + f"☁️ **𝗖𝗹𝗼𝘂𝗱 :** `{cloud} %`\n"
+        + f"🌄 **𝗦𝘂𝗻𝗿𝗶𝘀𝗲 :** `{sun(sunrise)}`\n"
+        + f"🌅 **𝗦𝘂𝗻𝘀𝗲𝘁 :** `{sun(sunset)}`\n\n\n"
         + f"**{desc}**\n"
         + f"`{cityname}, {fullc_n}`\n"
         + f"`{time}`\n\n"
@@ -184,7 +184,7 @@ async def _(event):
     await hell.delete()
 
 
-CmdHelp("climate").add_command(
+CmdHelp("𝐂ʟɪᴍᴀᴛᴇ").add_command(
     "climate", "Name of state/country", "Gets the weather of a city. By default it is Delhi, change it by setcity"
 ).add_command(
     "setcity", "<city>/<country>", "Sets your default city."
