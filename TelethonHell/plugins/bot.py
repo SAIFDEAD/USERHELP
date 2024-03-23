@@ -12,11 +12,12 @@ from TelethonHell.clients.client_list import get_user_id
 from TelethonHell.plugins import *
 
 ping_txt = """
-<b><i>╰•★★ ρσиɢ  𝐒αιғβσтƨ ★★•╯</b></i>
+<b><i>╰•⚡ 𝐋ɛɢɛռɖaʀʏ 𝐎ғ 𝐒αιғβσтƨ ⚡•╯</b></i>
 
     ⚘ ❥ <i>ʂ℘ɛɛɖ :</i> <code>{}</code>
     ⚘ ❥ <i>ų℘ɬıɱɛ :</i> <code>{}</code>
     ⚘ ❥ <i>ơῳŋɛཞ :</i> {}
+    
 """
 
 
@@ -149,7 +150,7 @@ async def _(event):
             return await parse_error(event, e)
     
     else:
-        await eod(event, f"**SYNTAX EXAMPLE**\n\n~ `{hl}dm @ForGo10God Hey Hell!` \n~ `{hl}dm @ForGo10God <reply to a msg>`")
+        await eod(event, f"**SYNTAX EXAMPLE**\n\n~ `{hl}GRP @SAIFHELPGC Hey Saif!` \n~ `{hl}GRP @SAIFHELPGC<reply to a msg>`")
 
 
 @hell_cmd(pattern="chain$")
@@ -170,7 +171,7 @@ async def _(event):
     await hell.edit(f"⛓️ **Chain length :**  `{count}`")
 
 
-CmdHelp("bot").add_command(
+CmdHelp("𝐁ᴏᴛ").add_command(
     "dc", None, "Gets the DataCenter Number"
 ).add_command(
     "config", None, "😒"
@@ -181,7 +182,7 @@ CmdHelp("bot").add_command(
 ).add_command(
     "kickme", None, "Kicks Yourself from the group."
 ).add_command(
-    "ping", None, "Checks the ping speed of your Hêllẞø†"
+    "ping", None, "Checks the ping speed of your Sαιғ βσт"
 ).add_command(
     "schd", "<secs> - <message>", "Sends your message in given secs", "schd 10 - Hello"
 ).add_command(
