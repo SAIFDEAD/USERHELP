@@ -40,17 +40,17 @@ async def _(event):
     await event.client(functions.photos.UploadProfilePhotoRequest(pfile))
     await event.delete()
     await event.client.send_message(
-        event.chat_id, "😋 **Hello friend!!**", reply_to=reply_message
+        event.chat_id, "😋 **𝐇𝐞𝐥𝐥𝐨 𝐟𝐫𝐢𝐞𝐧𝐝!!**", reply_to=reply_message
     )
     await event.client.send_message(
         Config.LOGGER_ID,
-        f"#CLONE \n\n**Successfully Cloned**  [{first_name}](tg://user?id={user_id })",
+        f"#CLONE \n\n**𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐂𝐥𝐨𝐧𝐞𝐝 𝐛𝐚𝐛𝐲 🌺**  [{first_name}](tg://user?id={user_id })",
     )
 
 
 @hell_cmd(pattern="revert$")
 async def _(event):
-    name = gvarstat("YOUR_NAME") or "『 Ӈєℓℓ 』"
+    name = gvarstat("YOUR_NAME") or "『𝐒𝙰𝙸𝙵 𝐔𝚂𝙴𝚁 𝐒𝙿𝙰𝙼』"
     bio = gvarstat("BIO_MSG") or choice(bio_msgs)
     n = 1
     await event.client(
@@ -120,7 +120,7 @@ async def get_full_user(event):
                 return None, e
 
 
-CmdHelp("clone").add_command(
+CmdHelp("𝐂ʟᴏɴᴇ").add_command(
     "clone", "username/reply to user", "Steals others profile including dp, name, bio."
 ).add_command(
     "revert", None, "To get back to your profile but it will show ALIVE_NAME instead of your current name and DEFAULT_BIO instead of your current bio"
