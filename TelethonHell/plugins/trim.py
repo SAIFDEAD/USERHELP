@@ -73,7 +73,7 @@ async def video(event):
     else:
         dl_end = datetime.datetime.now()
         dl_ms = (dl_end - dl_start).seconds
-        await hell.edit(f"**Downloaded Media !** \n\n__◈ Path:__ `{downloaded_file_name}` \n__◈ Time Taken:__ `{dl_ms} seconds`\n\n__Starting to trim video ...__")
+        await hell.edit(f"**Downloaded Media !** \n\n__◈ 𝐏𝐚𝐭𝐡:__ `{downloaded_file_name}` \n__◈ 𝐓𝐢𝐦𝐞 𝐓𝐚𝐤𝐞𝐧:__ `{dl_ms} seconds`\n\n__Starting to trim video ...__")
     lists = event.text.split(" ")
     start = datetime.datetime.now()
     if len(lists) == 3:
@@ -164,7 +164,7 @@ async def audio(event):
     else:
         dl_end = datetime.datetime.now()
         dl_ms = (dl_end - dl_start).seconds
-        await hell.edit(f"**Downloaded Media !** \n\n__◈ Path:__ `{downloaded_file_name}` \n__◈ Time Taken:__ `{dl_ms} seconds`\n\n__Starting to trim audio ...__")
+        await hell.edit(f"**Downloaded Media !** \n\n__◈ 𝐏𝐚𝐭𝐡:__ `{downloaded_file_name}` \n__◈ 𝐓𝐢𝐦𝐞 𝐓𝐚𝐤𝐞𝐧:__ `{dl_ms} seconds`\n\n__Starting to trim audio ...__")
     file_name = os.path.join(Config.TMP_DOWNLOAD_DIRECTORY, f"{str(round(time.time()))}.mp3")
     lists = event.text.split(" ")
     start = datetime.datetime.now()
@@ -205,7 +205,7 @@ async def audio(event):
     os.remove(o)
 
 
-CmdHelp("trim").add_command(
+CmdHelp("𝐓ʀɪᴍ").add_command(
     "vtrim", "<start time> <end time>", "Trimes replied video within given time stamps. To generate a screenshot given single time-stamp."
 ).add_command(
     "atrim", "<starttime> <endtime>", "Trimes replied media within given time stamps and gives audio file as output."
