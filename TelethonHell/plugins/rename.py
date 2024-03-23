@@ -14,8 +14,8 @@ from TelethonHell.plugins import *
 async def _(event):
     input_str = event.text[8:]
     if input_str == "":
-        return await eod(event, "Give a new file name.")
-    hell = await eor(event, f"Renaming to `{input_str}`")
+        return await eod(event, "ɢɪᴠᴇ ᴀ ɴᴇᴡ ғɪʟᴇ ɴᴀᴍᴇ.")
+    hell = await eor(event, f"ʀᴇɴᴀᴍɪɴɢ ᴛᴏ `{input_str}`")
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
     if event.reply_to_msg_id:
@@ -28,7 +28,7 @@ async def _(event):
                 reply,
                 os.path.join(Config.TMP_DOWNLOAD_DIRECTORY, file_name),
                 progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
-                    progress(d, t, hell, c_time, "Downloading ...")
+                    progress(d, t, hell, c_time, "ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ...")
                 ),
             )
         except Exception as e:
@@ -36,7 +36,7 @@ async def _(event):
         end = datetime.datetime.now()
         ms = (end - start).seconds
         if os.path.exists(downloaded_file_name):
-            await hell.edit(f"**✅ Renamed File!!** \n\n__• File Path:__ `{downloaded_file_name}` \n__• Time taken:__ `{ms} seconds`")
+            await hell.edit(f"**✅ ʀᴇɴᴀᴍᴇᴅ ғɪʟᴇ!!** \n\n__• File Path:__ `{downloaded_file_name}` \n__• Time taken:__ `{ms} seconds`")
         else:
             await parse_error(hell, "Unexpected Error Occured.")
     else:
@@ -61,7 +61,7 @@ async def _(event):
                 reply,
                 os.path.join(Config.TMP_DOWNLOAD_DIRECTORY, file_name),
                 progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
-                    progress(d, t, hell, c_time, "Downloading ...")
+                    progress(d, t, hell, c_time, "ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ...")
                 ),
             )
         except Exception as e:
@@ -84,7 +84,7 @@ async def _(event):
                 reply_to=event.message.id,
                 thumb=thumb,
                 progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
-                    progress(d, t, hell, c_time, "Uploading ...", downloaded_file_name)
+                    progress(d, t, hell, c_time, "ᴜᴘʟᴏᴀᴅɪɴɢ ...", downloaded_file_name)
                 ),
             )
             end_two = datetime.datetime.now()
@@ -179,7 +179,7 @@ async def _(event):
         await hell.edit(f"**Syntax Wrong !!** \n\n• `{hl}rnsupload new file name` as reply to a Telegram file")
 
 
-CmdHelp("rename").add_command(
+CmdHelp("𝐑ᴇɴᴀᴍᴇ").add_command(
     "rename", "<reply to media> <new name>", "Renames the replied media and downloads it to userbot local storage"
 ).add_command(
     "rnupload", "<reply to media> <new name>", "Renames the replied media and directly uploads it to the chat"
