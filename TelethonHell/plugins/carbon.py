@@ -7,7 +7,7 @@ from TelethonHell.plugins import *
 
 @hell_cmd(pattern="carbon(?:\s|$)([\s\S]*)")
 async def carbon(event):
-    hell = await eor(event, "__Making carbon ... 25%__")
+    hell = await eor(event, "__𝑀𝑎𝑘𝑖𝑛𝑔 𝑐𝑎𝑟𝑏𝑜𝑛 ... 25%__")
     _, _, hell_mention = await client_id(event)
     reply = await event.get_reply_message()
     lists = event.text.split(" ", 1)
@@ -20,7 +20,7 @@ async def carbon(event):
     text = deEmojify(_text)
     code = quote_plus(text)
 
-    await hell.edit("__Making carbon ... 50%__")
+    await hell.edit("__𝑀𝑎𝑘𝑖𝑛𝑔 𝑐𝑎𝑟𝑏𝑜𝑛 ... 50%__")
     chrome_options = Options()
     chrome_options.add_argument("--disable-dev-shm-usage")
     chrome_options.add_argument("--disable-gpu")
@@ -34,7 +34,7 @@ async def carbon(event):
     )
     driver.get(f"https://carbon.now.sh/?l=auto&code={code}")
 
-    await hell.edit("__Making carbon ... 75%__")
+    await hell.edit("__𝑀𝑎𝑘𝑖𝑛𝑔 𝑐𝑎𝑟𝑏𝑜𝑛 ... 75%__")
     driver.command_executor._commands["send_command"] = (
         "POST",
         "/session/$sessionId/chromium/send_command",
@@ -50,7 +50,7 @@ async def carbon(event):
     await event.client.send_file(
         event.chat_id,
         "./carbon.png",
-        caption=f"**Carbonized by:** {hell_mention}",
+        caption=f"**𝘾𝙖𝙧𝙗𝙤𝙣𝙞𝙯𝙚𝙙 𝙗𝙮 🌻:** {hell_mention}",
         force_document=True,
         reply_to=reply,
     )
@@ -61,7 +61,7 @@ async def carbon(event):
 
 @hell_cmd(pattern="kargb(?:\s|$)([\s\S]*)")
 async def kargb(event):
-    hell = await eor(event, "__Making carbon ...  25%__")
+    hell = await eor(event, "__𝑀𝑎𝑘𝑖𝑛𝑔 𝑐𝑎𝑟𝑏𝑜𝑛 ...  25%__")
     R = random.randint(0, 256)
     G = random.randint(0, 256)
     B = random.randint(0, 256)
@@ -78,7 +78,7 @@ async def kargb(event):
     text = deEmojify(_text)
     code = quote_plus(text)
 
-    await hell.edit("__Making carbon ... 50%__")
+    await hell.edit("__𝑀𝑎𝑘𝑖𝑛𝑔 𝑐𝑎𝑟𝑏𝑜𝑛 ... 50%__")
     url = f"https://carbon.now.sh/?bg=rgba({R}%2C{G}%2C{B}%2C1)&t={theme}&wt=none&l=auto&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira%20Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code={code}"
     chrome_options = Options()
     chrome_options.add_argument("--disable-dev-shm-usage")
@@ -93,7 +93,7 @@ async def kargb(event):
     )
     driver.get(url)
 
-    await hell.edit("__Making carbon ... 75%__")
+    await hell.edit("__𝑀𝑎𝑘𝑖𝑛𝑔 𝑐𝑎𝑟𝑏𝑜𝑛 ... 75%__")
     driver.command_executor._commands["send_command"] = (
         "POST",
         "/session/$sessionId/chromium/send_command",
@@ -105,7 +105,7 @@ async def kargb(event):
     driver.execute("send_command", params)
     driver.find_element("xpath", "//button[contains(text(),'Export')]").click()
 
-    await hell.edit("__Making carbon ... 100%__")
+    await hell.edit("__𝑀𝑎𝑘𝑖𝑛𝑔 𝑐𝑎𝑟𝑏𝑜𝑛 ... 100%__")
     await event.client.send_file(
         event.chat_id,
         "./carbon.png",
@@ -117,7 +117,7 @@ async def kargb(event):
     await hell.delete()
 
 
-CmdHelp("carbon").add_command(
+CmdHelp("𝐂ᴀʀʙᴏɴ").add_command(
     "carbon", "<your text>", "Carbonize your text. (Fixed style)"
 ).add_command(
     "kargb", "<your text>", "Carbonize your text.(random style)"
