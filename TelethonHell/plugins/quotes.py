@@ -66,7 +66,7 @@ async def morning(e):
 
 @hell_cmd(pattern="quote(?:\s|$)([\s\S]*)")
 async def quote_search(event):
-    hell = await eor(event, "`Processing...`")
+    hell = await eor(event, "`ᴘʀᴏᴄᴇssɪɴɢ...`")
     input_str = event.pattern_match.group(1)
     if not input_str:
         api_url = "https://quotes.cwprojects.live/random"
@@ -83,10 +83,10 @@ async def quote_search(event):
     if response is not None:
         await hell.edit(f"`{response['text']}`")
     else:
-        await parse_error(hell, "No quote found! Try again later.")
+        await parse_error(hell, "ɴᴏ ǫᴜᴏᴛᴇ ғᴏᴜɴᴅ! ᴛʀʏ ᴀɢᴀɪɴ ʟᴀᴛᴇʀ.")
 
 
-CmdHelp("quotes").add_command(
+CmdHelp("𝐐ᴜᴏᴛᴇs").add_command(
     "quote", "<input>", "Sends a random mind-blowing quote"
 ).add_command(
     "gdmng", None, "Sends a random Good Morning Quote"
