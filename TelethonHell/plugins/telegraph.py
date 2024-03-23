@@ -53,7 +53,7 @@ async def _(event):
                 ms_two = (end - start).seconds
                 os.remove(downloaded_file_name)
                 await hell.edit(
-                    "✓ **[File uploaded to telegraph](https://te.legra.ph{})** \n✓ **Time Taken:** `{}` secs \n✓ **By: {}** \n✓  `https://te.legra.ph{}`".format(
+                    "✓ **[Sαιғ βσт тɛℓɛɢяαρн](https://te.legra.ph{})** \n✓ **𝑇𝑖𝑚𝑒 𝑇𝑎𝑘𝑒𝑛:** `{}` ៜεϲៜ \n✓ **By: {}** \n✓  `https://te.legra.ph{}`".format(
                         media_urls[0],
                         (ms + ms_two),
                         hell_mention,
@@ -91,7 +91,7 @@ async def _(event):
             end = datetime.datetime.now()
             ms = (end - start).seconds
             await hell.edit(
-                f"✓ **[Pasted to telegraph](https://te.legra.ph/{response['path']})** \n✓ **Time Taken:** `{ms}` secs\n✓** By:**  {hell_mention} \n✓  `https://te.legra.ph/{response['path']}`",
+                f"✓ **[𝑆𝐴𝐼𝐹𝐵𝑂𝑇𝑍 𝑇𝐸𝐿𝐸𝐺𝑅𝐴𝑃𝐻](https://te.legra.ph/{response['path']})** \n✓ **𝑇𝑖𝑚𝑒 𝑇𝑎𝑘𝑒𝑛:** `{ms}` 𝑠𝑒𝑐𝑠\n✓** 𝐵𝑦:**  {hell_mention} \n✓  `https://te.legra.ph/{response['path']}`",
                 link_preview=True,
             )
     else:
@@ -109,8 +109,8 @@ async def _(event):
         return await parse_error(event, "Give a title for the telegraph page!")
     query = lists[1].split("|", 2)
     title = None
-    auth = "[ †he Hêllẞø† ]"
-    url = "https://t.me/its_hellbot"
+    auth = "⚡ 𝐒αιғβσтƨ ⚡"
+    url = "https://t.me/SAIFHELPGC"
     content = reply.message
     if len(query) == 3:
         title = query[0].strip()
@@ -119,10 +119,10 @@ async def _(event):
     else:
         title = query[0].strip()
     link = await telegraph_paste(title, content, auth, url)
-    await hell.edit(f"**Created telegraph post!** \n\n__◈ Title:__ `{title}` \n__◈ Author:__ [{auth}]({url}) \n__◈ Link:__ {link}", link_preview=False)
+    await hell.edit(f"**𝐂𝐫𝐞𝐚𝐭𝐞𝐝 𝐭𝐞𝐥𝐞𝐠𝐫𝐚𝐩𝐡 𝐩𝐨𝐬𝐭!** \n\n__◈ 𝐓𝐢𝐭𝐥𝐞:__ `{title}` \n__◈ 𝐀𝐮𝐭𝐡𝐨𝐫:__ [{auth}]({url}) \n__◈ Link:__ {link}", link_preview=False)
 
 
-CmdHelp("telegraph").add_command(
+CmdHelp("𝐓ᴇʟᴇɢʀᴀᴘʜ").add_command(
     "tt", "<reply to text message>", "Uploads the replied text message to telegraph making a short telegraph link"
 ).add_command(
     "tm", "<reply to media>", "Uploads the replied media (sticker/ gif/ video/ image) to telegraph and gives a short telegraph link"
