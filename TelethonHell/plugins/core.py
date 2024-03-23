@@ -21,16 +21,16 @@ async def kk(event):
     _o = o.split("\n")
     o = "\n".join(_o)
     OUTPUT = f"""
-<h1>List of Plugins in Hêllẞø†:</h1>
+<h1>List of Plugins in Sαιғ βσт:</h1>
 
 <code>{o}</code>
 
 <b><i>HELP:</b></i> <i>If you want to know the commands for a plugin, do “ .plinfo <plugin name> ”
 
-<b><a href='https://t.me/its_hellbot'>@Its_HellBot</a></b>
+<b><a href='https://t.me/SAIFALLBOT'>@SAIFALLBOT</a></b>
 """
-    hell = await telegraph_paste("All available plugins in Hêllẞø†", OUTPUT)
-    await eor(event, f"[All available plugins in Hêllẞø†]({hell})", link_preview=False)
+    hell = await telegraph_paste("All available plugins in Sαιғ βσт", OUTPUT)
+    await eor(event, f"[All available plugins in Sαιғ βσт]({SAIF})", link_preview=False)
 
 
 @hell_cmd(pattern="send ([\s\S]*)")
@@ -40,7 +40,7 @@ async def send(event):
     message_id = event.reply_to_msg_id or event.message.id
     thumb = hell_logo
     input_str = event.pattern_match.group(1)
-    omk = f"**• Plugin name ≈** `{input_str}`\n**• Uploaded by ≈** {hell_mention}\n\n⚡ **[ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt]({chnl_link})** ⚡"
+    omk = f"**• Plugin name ≈** `{input_str}`\n**• Uploaded by ≈** {hell_mention}\n\n⚡ **[ 𝐋ɛɢɛռɖaʀʏ 𝐎ғ 𝐒αιғβσтƨ ]({chnl_link})** ⚡"
     the_plugin_file = "./TelethonHell/plugins/{}.py".format(input_str.lower())
     if os.path.exists(the_plugin_file):
         await event.client.send_file(
@@ -104,7 +104,7 @@ async def install(event):
                             b = 1
                         await hell.edit(a)
                     return await hell.edit(
-                        f"✅ **Installed module** :- `{shortname}` \n✨ BY :- {hell_mention}\n\n{string}\n\n        ⚡ **[ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt]({chnl_link})** ⚡",
+                        f"✅ **Installed module** :- `{shortname}` \n✨ BY :- {hell_mention}\n\n{string}\n\n        ⚡ **[ 𝐋ɛɢɛռɖaʀʏ 𝐎ғ 𝐒αιғβσтƨ]({chnl_link})** ⚡",
                         link_preview=False,
                     )
                 return await hell.edit(
@@ -128,7 +128,7 @@ async def uninstall(event):
     try:
         remove_plugin(shortname)
         os.remove(dir_path)
-        await eod(hell, f"**Uninstalled plugin** `{shortname}` **successfully.**")
+        await eod(hell, f"**Ʋиιиƨтαℓℓɛ∂ ρℓʋɢιи** `{shortname}` **sᴜᴄᴄᴇssғᴜʟʟʏ 🥀.**")
     except OSError as e:
         await parse_error(hell, f"`{dir_path}` : __{e.strerror}__", False)
 
@@ -157,10 +157,10 @@ async def load(event):
         await parse_error(event, e)
 
 
-CmdHelp("core").add_command(
-    "install", "<reply to a .py file>", "Installs the replied python file if suitable to Hêllẞø†'s codes.`\n**🚩 Flags :** `-f"
+CmdHelp("𝐂ᴏʀᴇ").add_command(
+    "install", "<reply to a .py file>", "Installs the replied python file if suitable to ƨαιғ βσт codes.`\n**🚩 Flags :** `-f"
 ).add_command(
-    "uninstall", "<plugin name>", "Uninstalls the given plugin from Hêllẞø†. To get that again do .restart", "uninstall alive"
+    "uninstall", "<plugin name>", "Uninstalls the given plugin from Sαιғ βσт†. To get that again do .restart", "uninstall alive"
 ).add_command(
     "load", "<plugin name>", "Loades the unloaded plugin to your userbot", "load alive"
 ).add_command(
@@ -168,9 +168,9 @@ CmdHelp("core").add_command(
 ).add_command(
     "send", "<file name>", "Sends the given file from your userbot server, if any.", "send alive"
 ).add_command(
-    "cmds", None, "Gives out the list of modules in HellBot."
+    "cmds", None, "Gives out the list of modules in Sαιғ βσт."
 ).add_command(
-    "repo", None, "Gives HellBot's Github repo link."
+    "repo", None, "Gives Sαιғ βσт's Github repo link."
 ).add_command(
     "help", None, "Shows inline help menu."
 ).add_command(
