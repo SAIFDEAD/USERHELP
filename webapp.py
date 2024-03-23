@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def start():
-    return "Saof User Bot Started Successfully"
+    return "Saif User Bot Started Successfully"
 
 os.system("python3 -m TelethonHell")
 app.run(port=5000)
