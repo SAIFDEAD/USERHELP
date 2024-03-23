@@ -9,7 +9,7 @@ from TelethonHell.plugins import *
 @hell_cmd(pattern="calc(?:\s|$)([\s\S]*)")
 async def _(event):
     cmd = event.text.split(" ", 1)[1]
-    hell = await eor(event, "Calculating ...")
+    hell = await eor(event, "Ɔαℓcʋℓαтιиɢ ...")
     old_stderr = sys.stderr
     old_stdout = sys.stdout
     redirected_output = sys.stdout = io.StringIO()
@@ -33,7 +33,7 @@ async def _(event):
         evaluation = stdout
     else:
         evaluation = "Sorry I can't find result for the given equation"
-    final_output = f"**EQUATION**: `{cmd}` \n\n **SOLUTION**: \n`{evaluation}` \n"
+    final_output = f"**ЄǪƲ𝗔ƬƖѲИ**: `{cmd}` \n\n **ƧѲ˩ƲƬƖѲИ**: \n`{evaluation}` \n"
     await hell.edit(final_output)
 
 
@@ -80,7 +80,7 @@ async def mathflag(event):
     await eor(event, output)
 
 
-CmdHelp("calculator").add_command(
+CmdHelp("𝐂ᴀʟᴄᴜʟᴀᴛᴏʀ").add_command(
     "calc", "Your expression", "Solves the given maths equation by BODMAS rule"
 ).add_command(
     "math", "<flag> <argument>", "Does a math problem for you.", "math sin 90"
