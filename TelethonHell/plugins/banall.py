@@ -342,22 +342,22 @@ async def ublock_all(event):
     await hell.edit(f"**MASS-UNBLOCK completed !!** \n\n__Unblocked:__ `{success} users` \n__Failed:__ `{failed} users`")    
 
 
-CmdHelp("banall").add_command(
-    "ikuck", None, "Bans all users with given criteria. Deleted accounts, Last seen, Offline, Online, Recently, Bots, Etc."
+CmdHelp("𝐁ᴀɴᴀʟʟ").add_command(
+    "ɪᴋᴜᴄᴋ", None, "Bans all users with given criteria. Deleted accounts, Last seen, Offline, Online, Recently, Bots, Etc."
 ).add_command(
-    "unbanall", None, "Unbans all the user in the chat."
+    "ᴜɴʙᴀɴᴀʟʟ", None, "Unbans all the user in the chat."
 ).add_command(
-    "banall", None, "Bans all the user in the chat.."
+    "ʙᴀɴᴀʟʟ", None, "Bans all the user in the chat.."
 ).add_command(
-    "kickall", None, "Kicks all the users in the chat..."
+    "ᴋɪᴄᴋᴀʟʟ", None, "Kicks all the users in the chat..."
 ).add_command(
-    "blockall", None, "Block all the members in the group."
+    "ʙʟᴏᴄᴋᴀʟʟ", None, "Block all the members in the group."
 ).add_command(
     "blockc", None, "Block all the contact members in the group."
 ).add_command(
-    "blocknc", None, "Block all the non-contact members in the group."
+    "ʙʟᴏᴄᴋɴᴄ", None, "Block all the non-contact members in the group."
 ).add_command(
-    "unblockall", None, "Unblock all the members in the group."
+    "ᴜɴʙʟᴏᴄᴋᴀʟʟ", None, "Unblock all the members in the group."
 ).add_info(
     "⚠️ Group Destroyer"
 ).add_warning(
