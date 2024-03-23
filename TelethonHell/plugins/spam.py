@@ -57,7 +57,7 @@ async def spam(event, msg, count, reply_to, delay, bspam, uspam, media):
 
     await event.client.send_message(
         Config.LOGGER_ID,
-        f"#{what} \n\n**Spammed** `{count}` **messages in** {Spam.spam}",
+        f"#{what} \n\n**𝐒ᴘᴀᴍᴍᴇᴅ 𝐁ʏ 𝐒ᴀɪғʙᴏᴛs** `{count}` **𝐌ᴇssᴀɢᴇs 𝐈ɴ** {Spam.spam}",
     )
 
 
@@ -176,16 +176,16 @@ async def spamend(event):
         await eod(event, "**Nothing is spamming !!**")
 
 
-CmdHelp("spam").add_command(
-    "spam", "<number> <text>", "Sends the text 'X' number of times.", "spam 99 Hello"
+CmdHelp("𝐒ᴘᴀᴍ").add_command(
+    "spam", "<number> <text>", "Sends the text 'X' number of times.", "spam 100 ⚡ 𝐋ɛɢɛռɖaʀʏ 𝐎ғ 𝐒αιғβσтƨ ⚡"
 ).add_command(
     "mspam", "<reply to media> <number>", "Sends the replied media (gif/ video/ sticker/ pic) 'X' number of times", "mspam 100 <reply to media>"
 ).add_command(
-    "dspam", "<delay> <spam count> <text>", "Sends the text 'X' number of times in 'Y' seconds of delay", "dspam 5 100 Hello"
+    "dspam", "<delay> <spam count> <text>", "Sends the text 'X' number of times in 'Y' seconds of delay", "dspam 5 100 Sαιғ βσт"
 ).add_command(
-    "uspam", "<reply to a msg> or <text>", "Spams the message unlimited times until you get floodwait error or stop it manually.", "uspam Hello"
+    "uspam", "<reply to a msg> or <text>", "Spams the message unlimited times until you get floodwait error or stop it manually.", "uspam Sαιғ βσт"
 ).add_command(
-    "bspam", "<count> <text or reply>", "Spams the message X times without floodwait. Breaks the spam count to avoid floodwait.", "bspam 9999 Hello"
+    "bspam", "<count> <text or reply>", "Spams the message X times without floodwait. Breaks the spam count to avoid floodwait.", "bspam 9999 Sαιғ βσт"
 ).add_command(
     "endspam", None, "Terminates the ongoing spam."
 ).add_info(
