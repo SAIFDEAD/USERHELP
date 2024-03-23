@@ -5,8 +5,8 @@ from TelethonHell.plugins import *
 @hell_cmd(pattern="ss(?:\s|$)([\s\S]*)")
 async def _(event):
     if not event.reply_to_msg_id:
-        return await parse_error(event, "Reply to a message to quote it.")
-    hell = await eor(event, "`Making a Quote ...`")
+        return await parse_error(event, "ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ ǫᴜᴏᴛᴇ ɪᴛ.")
+    hell = await eor(event, "`ᴍᴀᴋɪɴɢ ᴀ ǫᴜᴏᴛᴇ ...`")
     reply_message = await event.get_reply_message()
     clr = event.text[4:]
     colour = "#292232"
@@ -31,7 +31,7 @@ async def _(event):
         to_quote.append(reply_message.id)
     async with event.client.conversation("@QuotLyBot") as conv:
         try:
-            first = await conv.send_message(f"/qemoji 👻")
+            first = await conv.send_message(f"/qemoji 💘")
             second = await conv.get_response()
             third = await conv.send_message(f"/qcolor {colour}")
             fourth = await conv.get_response()
@@ -48,7 +48,7 @@ async def _(event):
         await event.client.delete_messages(conv.chat_id, q_d)
 
 
-CmdHelp("qbot").add_command(
+CmdHelp("𝐐ʙᴏᴛ").add_command(
     "ss", "<reply to msg> '<bg colour>' <number of msgs>", "Makes the sticker of the replied text, sticker, pic till next given count msgs.", "ss 'black' 05 <reply to a msg>"
 ).add_info(
     "Makes Quoted Sticker."
