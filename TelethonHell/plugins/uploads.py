@@ -14,10 +14,10 @@ async def upload(event):
     reply = await event.get_reply_message()
     lists = event.text.split(" ", 1)
     if not len(lists) == 2:
-        return await parse_error(hell, "Upload path not given.")
+        return await parse_error(hell, "Ʊ⅊ℓɸαδ paтн noт gιven.")
     file_path = lists[1]
     if file_path in INVALID_UPLOAD:
-        return await eod(hell, "For security reasons this file is prohibited for uploading.")
+        return await eod(hell, "ғor ѕecυrιтy reaѕonѕ тнιѕ ғιle ιѕ proнιвιтed ғor υploadιng.")
     if os.path.exists(file_path):
         c_time = time.time()
         await event.client.send_file(
@@ -30,9 +30,9 @@ async def upload(event):
                 progress(d, t, hell, c_time, "Uploading ...", file_path)
             ),
         )
-        await eod(hell, f"__Uploaded__ `{file_path}` __successfully !!__")
+        await eod(hell, f"__υploaded__ `{file_path}` __ѕυcceѕѕғυlly !!__")
     else:
-        await eod(hell, "**404:** __File Not Found__")
+        await eod(hell, "**404:** __ғιle noт ғoυnd__")
 
 
 @hell_cmd(pattern="uploadir(?:\s|$)([\s\S]*)")
@@ -199,7 +199,7 @@ async def uploadas(event):
         await hell.edit("**404:** __File Not Found__")
 
 
-CmdHelp("uploads").add_command(
+CmdHelp("𝐔ᴘʟᴏᴀᴅs").add_command(
     "upload", "<path>", "Uploads a locally stored file to the chat"
 ).add_command(
     "uploadas stm", "<path>", "Uploads the locally stored video in streamable format."
