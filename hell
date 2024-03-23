@@ -32,7 +32,7 @@ configs() {
             edit_config
         elif [ $want_to_edit == "n" ]
         then
-            echo "Skipped editing of config file."
+            echo "Skipped editing of config  file."
         else
             echo "Unknown command. Startup terminated!!"
             exit 1
