@@ -70,3 +70,5 @@ async def get_user_id(event, ids):
     else:
         userid = (await event.client.get_entity(ids)).id
     return userid
+
+# SAIFDEAD
