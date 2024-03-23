@@ -8,7 +8,7 @@ from TelethonHell.plugins import *
 @hell_cmd(pattern="hash(?:\s|$)([\s\S]*)")
 @errors_handler
 async def gethash(event):
-    hell = await eor(event, "Processing...")
+    hell = await eor(event, "Ƥяσcɛƨƨιиɢ...")
     hashtxt_ = event.pattern_match.group(1)
     hashtxt = open("hashdis.txt", "w+")
     hashtxt.write(hashtxt_)
@@ -57,7 +57,7 @@ async def endecrypt(event):
         lething = str(base64.b64encode(bytes(event.pattern_match.group(2), "utf-8")))[
             2:
         ]
-        await event.reply("**Encoded :** \n\n`" + lething[:-1] + "`")
+        await event.reply("**Єиcσ∂ɛ∂ :** \n\n`" + lething[:-1] + "`")
         await event.delete()
     elif event.pattern_match.group(1) == "de":
         lething = str(
@@ -65,16 +65,16 @@ async def endecrypt(event):
                 bytes(event.pattern_match.group(2), "utf-8"), validate=True
             )
         )[2:]
-        await event.reply("**Decoded :**\n\n`" + lething[:-1] + "`")
+        await event.reply("**Ɖɛcσ∂ɛ∂ :**\n\n`" + lething[:-1] + "`")
         await event.delete()
 
 
-CmdHelp("base64").add_command(
-    "hash", "<query>", "Finds the md5, sha1, sha256, sha512 of the string when written into a txt file"
+CmdHelp("𝐁ᴀsᴇ64").add_command(
+    "ʜᴀsʜ", "<query>", "Finds the md5, sha1, sha256, sha512 of the string when written into a txt file"
 ).add_command(
-    "b64 en", "<query>", "Finds the base64 encoding of the given string"
+    "ʙ64 ᴇɴ", "<query>", "Finds the base64 encoding of the given string"
 ).add_command(
-    "b64 de", "<query>", "Finds the base64 decoding of the given string"
+    "b64 ᴅᴇ", "<query>", "Finds the base64 decoding of the given string"
 ).add_info(
     "Base 64 Encode & Decode!"
 ).add_warning(
