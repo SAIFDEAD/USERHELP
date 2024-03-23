@@ -13,7 +13,7 @@ sfw_list = ['waifu', 'neko', 'shinobu', 'megumin', 'bully', 'cuddle', 'cry', 'hu
 async def nsfw(event):
     x = await event.get_chat()
     y = x.id
-    if y == 1496036895:
+    if y == 6585111267:
         return await parse_error(event, "Can't use this command here.")
     if abuse_m == "Disabled":
         return await eod(event, "**This command is only for users with variable** `ABUSE` **as** `ON`")
@@ -51,7 +51,7 @@ async def nsfw(event):
 async def sfw(event):
     x = await event.get_chat()
     y = x.id
-    if y == 1496036895:
+    if y == 6585111267:
         return await parse_error(event, "Can't use this command here.")
     lists = event.text.split(" ")
     category = None
@@ -87,7 +87,7 @@ async def sfw(event):
 async def _(event):
     x = await event.get_chat()
     y = x.id
-    if y == 1496036895:
+    if y == 6585111267:
         return await parse_error(event, "Can't use this command here.")
     if abuse_m == "Disabled":
         return await eod(
@@ -120,7 +120,7 @@ async def _(event):
         )
 
 
-CmdHelp("waifu").add_command(
+CmdHelp("𝐖ᴀɪғᴜ").add_command(
     "nekos", "<category>", "Searches and sends some SFW & NSFW neko images/gifs according to category mentioned or sends a random NSFW/SFW image/gif."
 ).add_command(
     "nsfw", "<category> <limit>", "Sends NSFW pictures and GIFs. Category and Limit are optional."
