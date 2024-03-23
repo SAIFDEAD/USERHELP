@@ -520,7 +520,7 @@ async def _(event):
         "👁👁\n  👅  =====> Aae madarchod apna kaam kar",
         "👁👁\n  💋  =====> Chal abb gand mra bsdk",
         "👁👁\n  👄  =====> Bhag lode",
-        "👁👁\n  👄  =====> ⚡ 𝐋ɛɢɛռɖaʀʏ 𝐎ғ 𝐒αιғβσтƨ ⚡
+        "👁👁\n  👄  =====> ⚡ 𝐋ɛɢɛռɖaʀʏ 𝐎ғ 𝐒αιғβσтƨ ⚡",
         
    ]
     for i in animation_ttl:
