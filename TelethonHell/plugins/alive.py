@@ -65,7 +65,7 @@ async def _(event):
                 pic_list.append(c)
         PIC = random.choice(pic_list)
     else:
-        PIC = "https://te.legra.ph/file/ef25c527dba62a5917022.jpg"
+        PIC = "https://graph.org/file/ab6eeec6d1fe174538463.mp4"
     end = datetime.datetime.now()
     ping = (end - start).microseconds / 1000
     alive = alive_temp.format(
@@ -86,8 +86,8 @@ async def _(event):
     await hell.delete()
 
 
-@hell_cmd(pattern="hell$")
-async def hell_a(event):
+@hell_cmd(pattern="saif$")
+async def saif_a(event):
     userid, _, _ = await client_id(event)
     uptime = await get_time((time.time() - StartTime))
     am = gvarstat("ALIVE_MSG") or "<b>»» ⚡ 𝐒αιғβσтƨ ⚡ ɪѕ 𝐀ʟɪᴠᴇ ««</b>"
