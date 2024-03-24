@@ -12,12 +12,11 @@ from TelethonHell.clients.client_list import get_user_id
 from TelethonHell.plugins import *
 
 ping_txt = """
-<b><i>╰•⚡ 𝐋ɛɢɛռɖaʀʏ 𝐎ғ 𝐒αιғβσтƨ ⚡•╯</b></i>
+<b><i>╰•★★  ℘ơŋɠ ★★•╯</b></i>
 
-    ⚘ ❥ <i>ʂ℘ɛɛɖ :</i> <code>{}</code>
-    ⚘ ❥ <i>ų℘ɬıɱɛ :</i> <code>{}</code>
-    ⚘ ❥ <i>ơῳŋɛཞ :</i> {}
-    
+    ⚘  <i>ʂ℘ɛɛɖ :</i> <code>{}</code>
+    ⚘  <i>ų℘ɬıɱɛ :</i> <code>{}</code>
+    ⚘  <i>ơῳŋɛཞ :</i> {}
 """
 
 
@@ -150,7 +149,7 @@ async def _(event):
             return await parse_error(event, e)
     
     else:
-        await eod(event, f"**SYNTAX EXAMPLE**\n\n~ `{hl}GRP @SAIFHELPGC Hey Saif!` \n~ `{hl}GRP @SAIFHELPGC<reply to a msg>`")
+        await eod(event, f"**SYNTAX EXAMPLE**\n\n~ `{hl}dm @SAIFHELPGC Hey Saif!` \n~ `{hl}dm @SAIFHELPGC <reply to a msg>`")
 
 
 @hell_cmd(pattern="chain$")
@@ -171,7 +170,7 @@ async def _(event):
     await hell.edit(f"⛓️ **Chain length :**  `{count}`")
 
 
-CmdHelp("𝐁ᴏᴛ").add_command(
+CmdHelp("bot").add_command(
     "dc", None, "Gets the DataCenter Number"
 ).add_command(
     "config", None, "😒"
