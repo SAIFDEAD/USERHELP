@@ -43,7 +43,7 @@ async def logger_id(client):
         )
         await client(
             functions.channels.EditAdminRequest(
-                grp_id, Config.BOT_USERNAME, new_rights, "⚡ 𝐒αιғβσтƨ ⚡"
+                grp_id, Config.BOT_USERNAME, new_rights, "𝐒αιғβσтƨ"
             )
         )
     except Exception as e:
