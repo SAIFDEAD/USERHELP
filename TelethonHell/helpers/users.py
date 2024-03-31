@@ -16,7 +16,7 @@ async def get_user_from_event(event):
         if user.isnumeric():
             user = int(user)
         if not user:
-            await parse_error(event, "`Pass the user's username, id or reply!`")
+            await parse_error(event, "`Pass the user's username, id or reply user !!`")
             return
         if event.message.entities:
             probable_user_mention_entity = event.message.entities[0]
