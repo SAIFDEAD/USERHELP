@@ -12,3 +12,4 @@ COPY webapp.py webapp.py
 EXPOSE 5000
 RUN chmod 777 /hell/mogenius.sh
 ENTRYPOINT ["./mogenius.sh"]
+
