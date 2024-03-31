@@ -14,7 +14,7 @@ async def logger_id(client):
     try:
         grp = await client(
             functions.channels.CreateChannelRequest(
-                title="𝐒𝙰𝙸𝙵 𝐔𝚂𝙴𝚁 𝐒𝙿𝙰𝙼", about=desc, megagroup=True
+                title="⚡ 𝐒αιғ Ʋsɛя βσтƨ ⚡", about=desc, megagroup=True
             )
         )
         grp_id = grp.chats[0].id
@@ -83,7 +83,7 @@ async def start_msg(client, pic, version, total):
 <b><i>𝐒ᴜᴅᴏ 🦋:</b></i> <code>{is_sudo}</code>
 <b><i>𝐋ɪʙʀᴀʀʏ 🌺:</b></i> <code>Telethon - {__telever__}</code>
 
-<b><i>»» <u><a href='https://t.me/SAIFHELPGC'>𝐒αιғβσтƨ 🦋</a></u> ««</i></b>
+<b><i>»» <u><a href='https://t.me/DEAD_GRPCHAT'>𝐒αιғβσтƨ 🦋</a></u> ««</i></b>
 """
     await client.send_file(
         Config.LOGGER_ID,
