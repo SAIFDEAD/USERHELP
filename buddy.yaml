@@ -38,4 +38,5 @@
     - key: "DATABASE_URL"
       type: "VAR"
       encrypted: true
+      
 
