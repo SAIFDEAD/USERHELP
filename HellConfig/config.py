@@ -29,7 +29,7 @@ class Config(object):
     LYRICS_API = os.environ.get("LYRICS_API", None)
     MAX_SPAM = int(os.environ.get("MAX_SPAM", 3))
     MY_CHANNEL = os.environ.get("YOUR_CHANNEL", "SAIFALLBOT")
-    MY_GROUP = os.environ.get("YOUR_GROUP", "SAIFHELPGC")
+    MY_GROUP = os.environ.get("YOUR_GROUP", "DEAD_GRPCHAT")
     OCR_API = os.environ.get("OCR_API", None)
     PLUGIN_CHANNEL = int(os.environ.get("PLUGIN_CHANNEL", 0))
     PM_LOGGER = int(os.environ.get("PM_LOGGER", 0))
@@ -55,7 +55,7 @@ class Config(object):
     CHROME_DRIVER = os.environ.get("CHROME_DRIVER", "/app/.chromedriver/bin/chromedriver")
     GOOGLE_CHROME_BIN = os.environ.get("GOOGLE_CHROME_BIN", "/app/.apt/usr/bin/google-chrome")
     MAX_MESSAGE_SIZE_LIMIT = 4095
-    SUDO_USERS = 6585111267
+    SUDO_USERS = 7117906157
     TELEGRAPH_NAME = os.environ.get("TELEGRAPH_NAME", "⚡ 𝐒αιғβσтƨ ⚡ ")
     TEMP_DIR = os.environ.get("TEMP_DIR", None)
     TMP_DOWNLOAD_DIRECTORY = os.environ.get("TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
