@@ -149,7 +149,7 @@ async def _(event):
             return await parse_error(event, e)
     
     else:
-        await eod(event, f"**SYNTAX EXAMPLE**\n\n~ `{hl}dm @SAIFHELPGC Hey Saif!` \n~ `{hl}dm @SAIFHELPGC <reply to a msg>`")
+        await eod(event, f"**SYNTAX EXAMPLE**\n\n~ `{hl}dm @DEAD_GRPCHAT Hey Saif !` \n~ `{hl}dm @DEAD_GRPCHAT <reply to a msg>`")
 
 
 @hell_cmd(pattern="chain$")
@@ -181,7 +181,7 @@ CmdHelp("bot").add_command(
 ).add_command(
     "kickme", None, "Kicks Yourself from the group."
 ).add_command(
-    "ping", None, "Checks the ping speed of your Sαιғ βσт"
+    "ping", None, "Checks the ping speed of your Saif UserBot"
 ).add_command(
     "schd", "<secs> - <message>", "Sends your message in given secs", "schd 10 - Hello"
 ).add_command(
