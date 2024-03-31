@@ -574,7 +574,7 @@ SHAYRI = [
     "Bahte Hue Duriya Ko Kya Modega Koi.\nToote Hue Shishe Ko Kya Jodega Koi.\nChalo Fir Se Dil Lagake Dekhte Hai.\nAb Is Toote Hue Dil Ko Kya Todega Koi\n\n\n✍️ {}",
     "Dil Ko Jalate Hai Ham Diye Ki Tarah,\nTeri Zindagi Main Roshni Lane Ke Liye,\nLe Lete Hai Har Kaaton Ko Apni Zindagi Mein,\nBas Teri Rahon Main Phool Bhichane Ke Liye\n\n\n✍️{}",
     "Pyase Ko Ek Katra Pani Kafi Hai.\nIshq Mein Char Pal Ki Zindgani Kafi Hai.\nDoobne Ko Samander Mein Jayein Kahan.\nAapki Aankh Se Tapka Voh Pani Kafi Hai.\n\n\n✍️ {}",
-    "HAMNE TOH BSS DOST KO HI BEWAFA SAMJHA THHA...\nYAHAAN SACCHA PYAAR V SAATH NHI DIYA🥱🥱\n\n\n✍️ {}",
+    "HAMNE TOH BSS DOST KO HI BEWAFA SAMJHA THHA....\nYAHAAN SACCHA PYAAR V SAATH NHI DIYA🥱🥱\n\n\n✍️ {}",
     "Love leads to death 🥱🥱\nOr to a living dead 🥱🥱\n\n\n✍️ {}",
     "BAATEN TU KABHI YE NA BHULNA.....\nKOI TERE KAARANN HAI..MRR RHA 🥱🥱🥱🥱\n\n\n✍️ {}",
     "Ae dost Tere jaise log ko kaat k fekk dange hm\nMeri taraf aae her toofan ko Teri taraff bhej dange hm...\nLekhin tune Jo saath chorrda hamara ......\nKsm SE badnaam krke tujhe nya dost....\n dhoondh lange hum🥱🥱🥱🥱\n\n\n✍️ {}",
