@@ -11,36 +11,36 @@ from TelethonHell.plugins import *
 # -------------------------------------------------------------------------------
 
 ALIVE_TEMP = """
-<b><i>⚡𝐒αιғβσтƨ 𝗔ʟιʏɛ ⚡</i></b>
-<b><i>↼ 𝐎ᴡɴᴇʀ 🥀 ⇀</i></b> : 『 {hell_mention} 』
+<b><i>⚡ 𝐋ɛɢɛռɖaʀʏ 𝐎ғ 𝐒αιғβσтƨ ⚡</i></b>
+<b><i>↼ 𝐎ᴡɴᴇʀ ⇀</i></b> :  {hell_mention} 🥀
 ╭──────────────
 ┣─ <b>» 𝐓ᴇʟᴇᴛʜᴏɴ:</b> <i>{telethon_version}</i>
-┣─ <b>» 𝐒αιғβσтƨ :</b> <i>{hellbot_version}</i>
+┣─ <b>» 𝐒ᴀɪғ 𝐔sᴇʀ𝐁ᴏᴛ:</b> <i>{hellbot_version}</i>
 ┣─ <b>» 𝐒ᴜᴅᴏ:</b> <i>{is_sudo}</i>
 ┣─ <b>» 𝐔ᴘᴛɪᴍᴇ:</b> <i>{uptime}</i>
 ┣─ <b>» 𝐏ɪɴɢ:</b> <i>{ping}</i>
 ╰──────────────
-<b><i>»»» <a href='https://t.me/SAIFHELPGC'>⚡ 𝐒αιғβσтƨ ⚡</a> «««</i></b>
+<b><i>»»» <a href='https://t.me/SAIFALLBOT'>[⚡ 𝐒αιғβσтƨ ⚡]</a> «««</i></b>
 """
 
 msg = """{}\n
-<b><i> 𝐁ᴏᴛ 𝐒ᴛᴀᴛs 🥀 </b></i>
-<b>ᴛᴇʟᴇᴛʜᴏɴ 🔥≈</b>  <i>{}</i>
-<b> 𝐒αιғβσтƨ ⚡≈</b>  <i>{}</i>
-<b>𝐔ᴘᴛɪᴍᴇ 🥳≈</b>  <i>{}</i>
-<b>𝐀ʙᴜsᴇ 🌻≈</b>  <i>{}</i>
-<b>𝐒ᴜᴅᴏ 🦋≈</b>  <i>{}</i>
+<b><i> 𝖡𝗈𝗍 𝖲𝗍𝖺𝗍𝗌 ⚡ </b></i>
+<b>𝖳ᴇʟᴇᴛʜᴏɴ ≈</b>  <i>{}</i>
+<b>𝖲ᴀɪғ 𝖴sᴇʀ 𝖡ᴏᴛ ≈</b>  <i>{}</i>
+<b>𝖴ᴘᴛɪᴍᴇ ≈</b>  <i>{}</i>
+<b>𝖠ʙᴜsᴇ ≈</b>  <i>{}</i>
+<b>𝖲ᴜᴅᴏ ≈</b>  <i>{}</i>
 """
 # -------------------------------------------------------------------------------
 
 
 @hell_cmd(pattern="alivetemp$")
 async def set_alive_temp(event):
-    hell = await eor(event, "`ғᴇᴛᴄʜɪɴɢ ᴛᴇᴍᴘʟᴀᴛᴇ ...`")
+    hell = await eor(event, "`Fetching template ...`")
     reply = await event.get_reply_message()
     if not reply:
         alive_temp = gvarstat("ALIVE_TEMPLATE") or ALIVE_TEMP
-        to_reply = await hell.edit("ʙᴇʟᴏᴡ is ʏᴏᴜʀ ᴄᴜʀʀᴇɴᴛ ᴀʟɪᴠᴇ ᴛᴇᴍᴘʟᴀᴛᴇ 👇")
+        to_reply = await hell.edit("Below is your current alive template 👇")
         await event.client.send_message(event.chat_id, alive_temp, parse_mode=None, link_preview=False, reply_to=to_reply)
         return
     addgvar("ALIVE_TEMPLATE", reply.text)
@@ -65,7 +65,7 @@ async def _(event):
                 pic_list.append(c)
         PIC = random.choice(pic_list)
     else:
-        PIC = "https://graph.org/file/ab6eeec6d1fe174538463.mp4"
+        PIC = "https://graph.org/file/95491e2b03c9d40545dec.mp4"
     end = datetime.datetime.now()
     ping = (end - start).microseconds / 1000
     alive = alive_temp.format(
@@ -87,10 +87,10 @@ async def _(event):
 
 
 @hell_cmd(pattern="saif$")
-async def saif_a(event):
+async def hell_a(event):
     userid, _, _ = await client_id(event)
     uptime = await get_time((time.time() - StartTime))
-    am = gvarstat("ALIVE_MSG") or "<b>»» ⚡ 𝐒αιғβσтƨ ⚡ ɪѕ 𝐀ʟɪᴠᴇ ««</b>"
+    am = gvarstat("ALIVE_MSG") or "<b>»» нєℓℓвσт ιѕ σиℓιиє ««</b>"
     try:
         hell = await event.client.inline_query(Config.BOT_USERNAME, "alive")
         await hell[0].click(event.chat_id)
@@ -105,9 +105,9 @@ async def saif_a(event):
 
 
 CmdHelp("alive").add_command(
-    "alive", None, "sʜᴏᴡs ᴛʜᴇ ᴅᴇғᴀᴜʟᴛ ᴀʟɪᴠᴇ ᴍᴇssᴀɢᴇ."
+    "alive", None, "Shows the default Alive message."
 ).add_command(
-    "saif", None, "sʜᴏᴡs ɪɴʟɪɴᴇ ᴀʟɪᴠᴇ ᴍᴇssᴀɢᴇ."
+    "hell", None, "Shows inline Alive message."
 ).add_warning(
     "✅ Harmless Module"
 ).add()
