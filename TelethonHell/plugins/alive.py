@@ -87,10 +87,10 @@ async def _(event):
 
 
 @hell_cmd(pattern="saif$")
-async def hell_a(event):
+async def saif_a(event):
     userid, _, _ = await client_id(event)
     uptime = await get_time((time.time() - StartTime))
-    am = gvarstat("ALIVE_MSG") or "<b>»» нєℓℓвσт ιѕ σиℓιиє ««</b>"
+    am = gvarstat("ALIVE_MSG") or "<b>»» 𝗬𝗢𝗨𝗥 𝗦𝗔𝗜𝗙 𝗕𝗢𝗧 𝗜𝗦 𝗢𝗡𝗟𝗜𝗡𝗘 ««</b>"
     try:
         hell = await event.client.inline_query(Config.BOT_USERNAME, "alive")
         await hell[0].click(event.chat_id)
@@ -107,7 +107,7 @@ async def hell_a(event):
 CmdHelp("alive").add_command(
     "alive", None, "Shows the default Alive message."
 ).add_command(
-    "hell", None, "Shows inline Alive message."
+    "saif", None, "Shows inline Alive message."
 ).add_warning(
     "✅ Harmless Module"
 ).add()
