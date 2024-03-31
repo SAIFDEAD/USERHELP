@@ -47,7 +47,7 @@ def button(page, modules):
     buttons.append(
         [
             Button.inline(f"⤟ Back {hell_emoji}", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"),
-            Button.inline(f"💔", data="close"),
+            Button.inline(f"♨️", data="close"),
             Button.inline(f"{hell_emoji} Next ⤠", data=f"page({0 if page == (max_pages - 1) else (page + 1)})"),
         ]
     )
@@ -110,7 +110,7 @@ if Config.BOT_USERNAME and tbot:
                 ],
                 [
                     Button.url("𝐂ʜᴀɴɴᴇʟ", f"https://t.me/SAIFALLBOT"),
-                    Button.url("𝐆ʀᴏᴜᴘ", f"https://t.me/SAIFHELPGC"),
+                    Button.url("𝐆ʀᴏᴜᴘ", f"https://t.me/DEAD_GRPCHAT"),
                 ],
             ]
             a = gvarstat("ALIVE_PIC")
@@ -207,7 +207,7 @@ if Config.BOT_USERNAME and tbot:
                 text=f"**⚡ 𝐋ɛɢɛռɖaʀʏ 𝐎ғ 𝐒αιғβσтƨ ⚡**",
                 buttons=[
                     [Button.url(" 𝐑ᴇᴘᴏ 🦋", "https://github.com/SAIFDEAD/USERBOTZ")],
-                    [Button.url(" 𝐍ᴇᴛᴡᴏʀᴋ 🥀", "https://t.me/SAIFHELPGC")],
+                    [Button.url(" 𝐍ᴇᴛᴡᴏʀᴋ 🥀", "https://t.me/SAIFALLBOT")],
                 ],
             )
 
@@ -218,14 +218,14 @@ if Config.BOT_USERNAME and tbot:
                 buttons=[
                     [
                         Button.url("• 𝐔ᴘᴅᴀᴛᴇs •", "https://t.me/SAIFALLBOT"),
-                        Button.url("• 𝐂ʜᴀᴛ •", "https://t.me/SAIFHELPGC"),
+                        Button.url("• 𝐂ʜᴀᴛ •", "https://t.me/DEAD_GRPCHAT"),
                     ],
                     [
                         Button.url("• 𝐑ᴇᴘᴏ •", "https://github.com/SAIFDEAD/USERBOTZ"),
                         Button.url("• 𝐎ᴡɴᴇʀ •", "https://t.me/SAIF_DICTATOR"),
                     ],
                     [
-                        Button.url("◈ 𝐍ᴇᴛᴡᴏʀᴋ ◈", "https://t.me/SAIFHELPGC"),
+                        Button.url("◈ 𝐍ᴇᴛᴡᴏʀᴋ ◈", "https://t.me/SAIFALLBOT"),
                     ],
                 ],
                 link_preview=False,
