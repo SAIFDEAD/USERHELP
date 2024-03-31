@@ -289,6 +289,7 @@ GENDER = [
     "u is woman",
     "u is gey",
     "u is chakka",
+    "u is piro Gey",
 ]
 
 EMOTICONS = [
